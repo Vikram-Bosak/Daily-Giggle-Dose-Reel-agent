@@ -84,9 +84,10 @@ def search_and_download_latest_video():
     print(f"Time limit is set to: {time_limit.isoformat()}")
     
     nitter_instances = [
+        "https://nitter.perennialte.ch",
         "https://nitter.net",
-        "https://nitter.privacydev.net",
-        "https://nitter.poast.org"
+        "https://nitter.poast.org",
+        "https://nitter.privacydev.net"
     ]
     
     search_query = os.environ.get("X_SEARCH_QUERY")
