@@ -83,15 +83,19 @@ def run_single_sequence():
         write_report(report_data)
         # Save to history to prevent picking this unsafe video again
         save_to_history(task_id)
+        if video_data.get('hash'):
+            save_to_history(video_data['hash'])
         return False
-        
+         
     print(f"Downloaded Video: {task_id}")
     report_download_complete(source_url)
     send_discord_message(f"🆔 **Unique ID generated:** {task_id}")
     increment_download()
-    
+     
     # Save to history immediately to prevent infinite retry loops if edit/upload fails
     save_to_history(task_id)
+    if video_data.get('hash'):
+        save_to_history(video_data['hash'])
     
     # IMMEDIATELY push to GitHub so if the user triggers another run during the 15-minute sleep, it won't duplicate!
     print("Pushing history to GitHub immediately to prevent race conditions...")

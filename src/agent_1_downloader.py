@@ -21,6 +21,18 @@ def save_to_history(video_id):
     with open(HISTORY_FILE, 'a') as f:
         f.write(f"{video_id}\n")
 
+def calculate_file_hash(file_path: str) -> str:
+    import hashlib
+    hasher = hashlib.md5()
+    try:
+        with open(file_path, 'rb') as f:
+            for chunk in iter(lambda: f.read(8192), b''):
+                hasher.update(chunk)
+        return hasher.hexdigest()
+    except Exception as e:
+        print(f"Error hashing file {file_path}: {e}")
+        return ""
+
 def search_and_download_latest_video():
     print("Searching Twitter (via Nitter RSS) for new videos posted in the last 3 hours...")
     
@@ -312,10 +324,19 @@ def search_and_download_latest_video():
                 info = ydl.extract_info(original_tweet_url, download=True)
                 clean_title = info.get('title', f"Twitter Video {tweet_id}")
                 
+            video_hash = calculate_file_hash(filename)
+            if video_hash and video_hash in history:
+                print(f"Duplicate Video Content Detected (hash={video_hash}). Skipping this video...")
+                stats["videos_skipped"] += 1
+                if os.path.exists(filename):
+                    os.remove(filename)
+                continue
+                
             meta = {
                 "title": clean_title,
                 "source_url": original_tweet_url,
-                "video_id": tweet_id
+                "video_id": tweet_id,
+                "hash": video_hash
             }
             with open("workspace/meta.json", "w") as f:
                 json.dump(meta, f)
@@ -343,13 +364,15 @@ def run_downloader():
         video_path, title, tweet_id, source_url, video_url, stats = None, None, None, None, None, {}
         
     if video_path and os.path.exists(video_path):
+        video_hash = calculate_file_hash(video_path)
         video_data = {
             "id": tweet_id,
             "tweet_id": tweet_id,
             "title": title,
             "source_url": source_url,
             "local_path": video_path,
-            "status": "DOWNLOADED"
+            "status": "DOWNLOADED",
+            "hash": video_hash
         }
         print("Agent 1 completed successfully.")
         return video_data, stats
