@@ -1,0 +1,414 @@
+process_video	Set up job	﻿2026-06-11T13:09:54.6297660Z Current runner version: '2.335.1'
+process_video	Set up job	2026-06-11T13:09:54.6321506Z ##[group]Runner Image Provisioner
+process_video	Set up job	2026-06-11T13:09:54.6322517Z Hosted Compute Agent
+process_video	Set up job	2026-06-11T13:09:54.6323183Z Version: 20260527.539
+process_video	Set up job	2026-06-11T13:09:54.6323824Z Commit: a891dd388383b896fa6ac04a82c0b75cec981078
+process_video	Set up job	2026-06-11T13:09:54.6325113Z Build Date: 2026-05-27T21:39:57Z
+process_video	Set up job	2026-06-11T13:09:54.6325849Z Worker ID: {6ec16839-0811-4934-9a1c-1fe8c19c2365}
+process_video	Set up job	2026-06-11T13:09:54.6326652Z Azure Region: westus
+process_video	Set up job	2026-06-11T13:09:54.6327315Z ##[endgroup]
+process_video	Set up job	2026-06-11T13:09:54.6329168Z ##[group]Operating System
+process_video	Set up job	2026-06-11T13:09:54.6329935Z Ubuntu
+process_video	Set up job	2026-06-11T13:09:54.6330500Z 24.04.4
+process_video	Set up job	2026-06-11T13:09:54.6331175Z LTS
+process_video	Set up job	2026-06-11T13:09:54.6331719Z ##[endgroup]
+process_video	Set up job	2026-06-11T13:09:54.6332379Z ##[group]Runner Image
+process_video	Set up job	2026-06-11T13:09:54.6333031Z Image: ubuntu-24.04
+process_video	Set up job	2026-06-11T13:09:54.6333609Z Version: 20260607.184.1
+process_video	Set up job	2026-06-11T13:09:54.6335179Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260607.184/images/ubuntu/Ubuntu2404-Readme.md
+process_video	Set up job	2026-06-11T13:09:54.6337055Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260607.184
+process_video	Set up job	2026-06-11T13:09:54.6338073Z ##[endgroup]
+process_video	Set up job	2026-06-11T13:09:54.6339723Z ##[group]GITHUB_TOKEN Permissions
+process_video	Set up job	2026-06-11T13:09:54.6341834Z Contents: read
+process_video	Set up job	2026-06-11T13:09:54.6342553Z Metadata: read
+process_video	Set up job	2026-06-11T13:09:54.6343144Z Packages: read
+process_video	Set up job	2026-06-11T13:09:54.6343781Z ##[endgroup]
+process_video	Set up job	2026-06-11T13:09:54.6346138Z Secret source: Actions
+process_video	Set up job	2026-06-11T13:09:54.6347151Z Prepare workflow directory
+process_video	Set up job	2026-06-11T13:09:54.6934009Z Prepare all required actions
+process_video	Set up job	2026-06-11T13:09:54.6970892Z Getting action download info
+process_video	Set up job	2026-06-11T13:09:55.3572305Z Download action repository 'actions/checkout@v3' (SHA:f43a0e5ff2bd294095638e18286ca9a3d1956744)
+process_video	Set up job	2026-06-11T13:09:55.4378848Z Download action repository 'actions/setup-python@v4' (SHA:7f4fc3e22c37d6ff65e88745f38bd3157c663f7c)
+process_video	Set up job	2026-06-11T13:09:55.6601876Z Complete job name: process_video
+process_video	Checkout Repository	﻿2026-06-11T13:09:55.7276415Z ##[group]Run actions/checkout@v3
+process_video	Checkout Repository	2026-06-11T13:09:55.7277308Z with:
+process_video	Checkout Repository	2026-06-11T13:09:55.7277853Z   repository: Vikram-Bosak/Fifa_world_cup_agent_1
+process_video	Checkout Repository	2026-06-11T13:09:55.7282675Z   token: ***
+process_video	Checkout Repository	2026-06-11T13:09:55.7283129Z   ssh-strict: true
+process_video	Checkout Repository	2026-06-11T13:09:55.7283612Z   persist-credentials: true
+process_video	Checkout Repository	2026-06-11T13:09:55.7284323Z   clean: true
+process_video	Checkout Repository	2026-06-11T13:09:55.7284807Z   sparse-checkout-cone-mode: true
+process_video	Checkout Repository	2026-06-11T13:09:55.7285362Z   fetch-depth: 1
+process_video	Checkout Repository	2026-06-11T13:09:55.7285817Z   fetch-tags: false
+process_video	Checkout Repository	2026-06-11T13:09:55.7286264Z   lfs: false
+process_video	Checkout Repository	2026-06-11T13:09:55.7286697Z   submodules: false
+process_video	Checkout Repository	2026-06-11T13:09:55.7287162Z   set-safe-directory: true
+process_video	Checkout Repository	2026-06-11T13:09:55.7287904Z env:
+process_video	Checkout Repository	2026-06-11T13:09:55.7288536Z   TELEGRAM_BOT_TOKEN: ***
+process_video	Checkout Repository	2026-06-11T13:09:55.7289059Z   TELEGRAM_CHAT_ID: ***
+process_video	Checkout Repository	2026-06-11T13:09:55.7291226Z   FB_ACCESS_TOKEN: ***
+process_video	Checkout Repository	2026-06-11T13:09:55.7291736Z   FB_PAGE_ID: ***
+process_video	Checkout Repository	2026-06-11T13:09:55.7292412Z   VIDEO_SOURCE_URL: https://www.fifa.com/en/tournaments/mens/worldcup/#clips/
+process_video	Checkout Repository	2026-06-11T13:09:55.7293186Z ##[endgroup]
+process_video	Checkout Repository	2026-06-11T13:09:55.8161125Z Syncing repository: Vikram-Bosak/Fifa_world_cup_agent_1
+process_video	Checkout Repository	2026-06-11T13:09:55.8163036Z ##[group]Getting Git version info
+process_video	Checkout Repository	2026-06-11T13:09:55.8163942Z Working directory is '/home/runner/work/Fifa_world_cup_agent_1/Fifa_world_cup_agent_1'
+process_video	Checkout Repository	2026-06-11T13:09:55.8165406Z [command]/usr/bin/git version
+process_video	Checkout Repository	2026-06-11T13:09:55.8254501Z git version 2.54.0
+process_video	Checkout Repository	2026-06-11T13:09:55.8281405Z ##[endgroup]
+process_video	Checkout Repository	2026-06-11T13:09:55.8297463Z Temporarily overriding HOME='/home/runner/work/_temp/dda7c06b-7208-4b12-afe4-3fe611db9ba4' before making global git config changes
+process_video	Checkout Repository	2026-06-11T13:09:55.8300007Z Adding repository directory to the temporary git global config as a safe directory
+process_video	Checkout Repository	2026-06-11T13:09:55.8302426Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Fifa_world_cup_agent_1/Fifa_world_cup_agent_1
+process_video	Checkout Repository	2026-06-11T13:09:55.8347970Z Deleting the contents of '/home/runner/work/Fifa_world_cup_agent_1/Fifa_world_cup_agent_1'
+process_video	Checkout Repository	2026-06-11T13:09:55.8351175Z ##[group]Initializing the repository
+process_video	Checkout Repository	2026-06-11T13:09:55.8354605Z [command]/usr/bin/git init /home/runner/work/Fifa_world_cup_agent_1/Fifa_world_cup_agent_1
+process_video	Checkout Repository	2026-06-11T13:09:55.8458468Z hint: Using 'master' as the name for the initial branch. This default branch name
+process_video	Checkout Repository	2026-06-11T13:09:55.8460382Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+process_video	Checkout Repository	2026-06-11T13:09:55.8461850Z hint: to use in all of your new repositories, which will suppress this warning,
+process_video	Checkout Repository	2026-06-11T13:09:55.8463635Z hint: call:
+process_video	Checkout Repository	2026-06-11T13:09:55.8464931Z hint:
+process_video	Checkout Repository	2026-06-11T13:09:55.8466297Z hint: 	git config --global init.defaultBranch <name>
+process_video	Checkout Repository	2026-06-11T13:09:55.8467639Z hint:
+process_video	Checkout Repository	2026-06-11T13:09:55.8468478Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+process_video	Checkout Repository	2026-06-11T13:09:55.8469814Z hint: 'development'. The just-created branch can be renamed via this command:
+process_video	Checkout Repository	2026-06-11T13:09:55.8470624Z hint:
+process_video	Checkout Repository	2026-06-11T13:09:55.8471302Z hint: 	git branch -m <name>
+process_video	Checkout Repository	2026-06-11T13:09:55.8472111Z hint:
+process_video	Checkout Repository	2026-06-11T13:09:55.8472792Z hint: Disable this message with "git config set advice.defaultBranchName false"
+process_video	Checkout Repository	2026-06-11T13:09:55.8474068Z Initialized empty Git repository in /home/runner/work/Fifa_world_cup_agent_1/Fifa_world_cup_agent_1/.git/
+process_video	Checkout Repository	2026-06-11T13:09:55.8476703Z [command]/usr/bin/git remote add origin https://github.com/Vikram-Bosak/Fifa_world_cup_agent_1
+process_video	Checkout Repository	2026-06-11T13:09:55.8514410Z ##[endgroup]
+process_video	Checkout Repository	2026-06-11T13:09:55.8515814Z ##[group]Disabling automatic garbage collection
+process_video	Checkout Repository	2026-06-11T13:09:55.8517107Z [command]/usr/bin/git config --local gc.auto 0
+process_video	Checkout Repository	2026-06-11T13:09:55.8545403Z ##[endgroup]
+process_video	Checkout Repository	2026-06-11T13:09:55.8546174Z ##[group]Setting up auth
+process_video	Checkout Repository	2026-06-11T13:09:55.8550526Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+process_video	Checkout Repository	2026-06-11T13:09:55.8579823Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+process_video	Checkout Repository	2026-06-11T13:09:55.8925151Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+process_video	Checkout Repository	2026-06-11T13:09:55.8952162Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+process_video	Checkout Repository	2026-06-11T13:09:55.9161227Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+process_video	Checkout Repository	2026-06-11T13:09:55.9192313Z ##[endgroup]
+process_video	Checkout Repository	2026-06-11T13:09:55.9193172Z ##[group]Fetching the repository
+process_video	Checkout Repository	2026-06-11T13:09:55.9200790Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +fb54891907801f02bf7312d4c00d2a2d08e3537c:refs/remotes/origin/main
+process_video	Checkout Repository	2026-06-11T13:09:56.3923276Z remote: Enumerating objects: 21, done.        
+process_video	Checkout Repository	2026-06-11T13:09:56.3926040Z remote: Counting objects:   4% (1/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3927943Z remote: Counting objects:   9% (2/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3935674Z remote: Counting objects:  14% (3/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3937189Z remote: Counting objects:  19% (4/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3938050Z remote: Counting objects:  23% (5/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3938820Z remote: Counting objects:  28% (6/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3939587Z remote: Counting objects:  33% (7/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3940558Z remote: Counting objects:  38% (8/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3941802Z remote: Counting objects:  42% (9/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3942555Z remote: Counting objects:  47% (10/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3943256Z remote: Counting objects:  52% (11/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3943957Z remote: Counting objects:  57% (12/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3945375Z remote: Counting objects:  61% (13/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3946149Z remote: Counting objects:  66% (14/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3946908Z remote: Counting objects:  71% (15/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3948114Z remote: Counting objects:  76% (16/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3948896Z remote: Counting objects:  80% (17/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3949865Z remote: Counting objects:  85% (18/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3950673Z remote: Counting objects:  90% (19/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3951768Z remote: Counting objects:  95% (20/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3952631Z remote: Counting objects: 100% (21/21)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3953475Z remote: Counting objects: 100% (21/21), done.        
+process_video	Checkout Repository	2026-06-11T13:09:56.3954656Z remote: Compressing objects:   7% (1/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3956133Z remote: Compressing objects:  14% (2/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3957517Z remote: Compressing objects:  21% (3/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3958922Z remote: Compressing objects:  28% (4/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3960306Z remote: Compressing objects:  35% (5/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3961706Z remote: Compressing objects:  42% (6/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3963199Z remote: Compressing objects:  50% (7/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3965020Z remote: Compressing objects:  57% (8/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3966472Z remote: Compressing objects:  64% (9/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3967870Z remote: Compressing objects:  71% (10/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3969260Z remote: Compressing objects:  78% (11/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3970637Z remote: Compressing objects:  85% (12/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3972018Z remote: Compressing objects:  92% (13/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3973393Z remote: Compressing objects: 100% (14/14)        
+process_video	Checkout Repository	2026-06-11T13:09:56.3975135Z remote: Compressing objects: 100% (14/14), done.        
+process_video	Checkout Repository	2026-06-11T13:09:56.6104953Z remote: Total 21 (delta 0), reused 19 (delta 0), pack-reused 0 (from 0)        
+process_video	Checkout Repository	2026-06-11T13:09:56.6869823Z From https://github.com/Vikram-Bosak/Fifa_world_cup_agent_1
+process_video	Checkout Repository	2026-06-11T13:09:56.6872434Z  * [new ref]         fb54891907801f02bf7312d4c00d2a2d08e3537c -> origin/main
+process_video	Checkout Repository	2026-06-11T13:09:56.6922927Z ##[endgroup]
+process_video	Checkout Repository	2026-06-11T13:09:56.6925307Z ##[group]Determining the checkout info
+process_video	Checkout Repository	2026-06-11T13:09:56.6927261Z ##[endgroup]
+process_video	Checkout Repository	2026-06-11T13:09:56.6928692Z ##[group]Checking out the ref
+process_video	Checkout Repository	2026-06-11T13:09:56.6931331Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+process_video	Checkout Repository	2026-06-11T13:09:56.7113513Z Switched to a new branch 'main'
+process_video	Checkout Repository	2026-06-11T13:09:56.7116225Z branch 'main' set up to track 'origin/main'.
+process_video	Checkout Repository	2026-06-11T13:09:56.7123665Z ##[endgroup]
+process_video	Checkout Repository	2026-06-11T13:09:56.7160106Z [command]/usr/bin/git log -1 --format='%H'
+process_video	Checkout Repository	2026-06-11T13:09:56.7182466Z 'fb54891907801f02bf7312d4c00d2a2d08e3537c'
+process_video	Set up Python	﻿2026-06-11T13:09:56.7533548Z ##[group]Run actions/setup-python@v4
+process_video	Set up Python	2026-06-11T13:09:56.7535247Z with:
+process_video	Set up Python	2026-06-11T13:09:56.7536260Z   python-version: 3.10
+process_video	Set up Python	2026-06-11T13:09:56.7537366Z   check-latest: false
+process_video	Set up Python	2026-06-11T13:09:56.7551220Z   token: ***
+process_video	Set up Python	2026-06-11T13:09:56.7552248Z   update-environment: true
+process_video	Set up Python	2026-06-11T13:09:56.7553418Z   allow-prereleases: false
+process_video	Set up Python	2026-06-11T13:09:56.7554793Z env:
+process_video	Set up Python	2026-06-11T13:09:56.7556126Z   TELEGRAM_BOT_TOKEN: ***
+process_video	Set up Python	2026-06-11T13:09:56.7557256Z   TELEGRAM_CHAT_ID: ***
+process_video	Set up Python	2026-06-11T13:09:56.7562712Z   FB_ACCESS_TOKEN: ***
+process_video	Set up Python	2026-06-11T13:09:56.7563815Z   FB_PAGE_ID: ***
+process_video	Set up Python	2026-06-11T13:09:56.7565475Z   VIDEO_SOURCE_URL: https://www.fifa.com/en/tournaments/mens/worldcup/#clips/
+process_video	Set up Python	2026-06-11T13:09:56.7567288Z ##[endgroup]
+process_video	Set up Python	2026-06-11T13:09:56.9351601Z ##[group]Installed versions
+process_video	Set up Python	2026-06-11T13:09:56.9474020Z Successfully set up CPython (3.10.20)
+process_video	Set up Python	2026-06-11T13:09:56.9475185Z ##[endgroup]
+process_video	Install Dependencies	﻿2026-06-11T13:09:56.9575521Z ##[group]Run python -m pip install --upgrade pip
+process_video	Install Dependencies	2026-06-11T13:09:56.9576045Z ^[[36;1mpython -m pip install --upgrade pip^[[0m
+process_video	Install Dependencies	2026-06-11T13:09:56.9576452Z ^[[36;1mpip install -r requirements.txt^[[0m
+process_video	Install Dependencies	2026-06-11T13:09:56.9784541Z shell: /usr/bin/bash -e {0}
+process_video	Install Dependencies	2026-06-11T13:09:56.9784910Z env:
+process_video	Install Dependencies	2026-06-11T13:09:56.9785392Z   TELEGRAM_BOT_TOKEN: ***
+process_video	Install Dependencies	2026-06-11T13:09:56.9785727Z   TELEGRAM_CHAT_ID: ***
+process_video	Install Dependencies	2026-06-11T13:09:56.9787117Z   FB_ACCESS_TOKEN: ***
+process_video	Install Dependencies	2026-06-11T13:09:56.9787448Z   FB_PAGE_ID: ***
+process_video	Install Dependencies	2026-06-11T13:09:56.9787879Z   VIDEO_SOURCE_URL: https://www.fifa.com/en/tournaments/mens/worldcup/#clips/
+process_video	Install Dependencies	2026-06-11T13:09:56.9788457Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	Install Dependencies	2026-06-11T13:09:56.9789210Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+process_video	Install Dependencies	2026-06-11T13:09:56.9789720Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	Install Dependencies	2026-06-11T13:09:56.9790176Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	Install Dependencies	2026-06-11T13:09:56.9790629Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	Install Dependencies	2026-06-11T13:09:56.9791128Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+process_video	Install Dependencies	2026-06-11T13:09:56.9791516Z ##[endgroup]
+process_video	Install Dependencies	2026-06-11T13:09:58.0951395Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages (26.1.2)
+process_video	Install Dependencies	2026-06-11T13:09:58.7430980Z Collecting requests (from -r requirements.txt (line 1))
+process_video	Install Dependencies	2026-06-11T13:09:58.7958499Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+process_video	Install Dependencies	2026-06-11T13:09:58.8211787Z Collecting moviepy (from -r requirements.txt (line 2))
+process_video	Install Dependencies	2026-06-11T13:09:58.8246602Z   Downloading moviepy-2.2.1-py3-none-any.whl.metadata (6.9 kB)
+process_video	Install Dependencies	2026-06-11T13:09:58.9261426Z Collecting yt-dlp (from -r requirements.txt (line 3))
+process_video	Install Dependencies	2026-06-11T13:09:58.9326387Z   Downloading yt_dlp-2026.6.9-py3-none-any.whl.metadata (183 kB)
+process_video	Install Dependencies	2026-06-11T13:09:58.9841700Z Collecting python-dotenv (from -r requirements.txt (line 4))
+process_video	Install Dependencies	2026-06-11T13:09:58.9872253Z   Downloading python_dotenv-1.2.2-py3-none-any.whl.metadata (27 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.0417883Z Collecting google-api-python-client (from -r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:09:59.0448476Z   Downloading google_api_python_client-2.197.0-py3-none-any.whl.metadata (7.0 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.0562958Z Collecting google-auth-httplib2 (from -r requirements.txt (line 6))
+process_video	Install Dependencies	2026-06-11T13:09:59.0595760Z   Downloading google_auth_httplib2-0.4.0-py3-none-any.whl.metadata (3.0 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.0729694Z Collecting google-auth-oauthlib (from -r requirements.txt (line 7))
+process_video	Install Dependencies	2026-06-11T13:09:59.0761858Z   Downloading google_auth_oauthlib-1.4.0-py3-none-any.whl.metadata (2.6 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.1857555Z Collecting charset_normalizer<4,>=2 (from requests->-r requirements.txt (line 1))
+process_video	Install Dependencies	2026-06-11T13:09:59.1891429Z   Downloading charset_normalizer-3.4.7-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.2039915Z Collecting idna<4,>=2.5 (from requests->-r requirements.txt (line 1))
+process_video	Install Dependencies	2026-06-11T13:09:59.2068016Z   Downloading idna-3.18-py3-none-any.whl.metadata (6.1 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.2305181Z Collecting urllib3<3,>=1.26 (from requests->-r requirements.txt (line 1))
+process_video	Install Dependencies	2026-06-11T13:09:59.2334246Z   Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.2523311Z Collecting certifi>=2023.5.7 (from requests->-r requirements.txt (line 1))
+process_video	Install Dependencies	2026-06-11T13:09:59.2558542Z   Downloading certifi-2026.5.20-py3-none-any.whl.metadata (2.5 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.2715007Z Collecting decorator<6.0,>=4.0.2 (from moviepy->-r requirements.txt (line 2))
+process_video	Install Dependencies	2026-06-11T13:09:59.2752384Z   Downloading decorator-5.3.1-py3-none-any.whl.metadata (3.9 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.2989034Z Collecting imageio<3.0,>=2.5 (from moviepy->-r requirements.txt (line 2))
+process_video	Install Dependencies	2026-06-11T13:09:59.3019001Z   Downloading imageio-2.37.3-py3-none-any.whl.metadata (9.7 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.3305815Z Collecting imageio_ffmpeg>=0.2.0 (from moviepy->-r requirements.txt (line 2))
+process_video	Install Dependencies	2026-06-11T13:09:59.3335368Z   Downloading imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.5670342Z Collecting numpy>=1.25.0 (from moviepy->-r requirements.txt (line 2))
+process_video	Install Dependencies	2026-06-11T13:09:59.5702459Z   Downloading numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.5842995Z Collecting proglog<=1.0.0 (from moviepy->-r requirements.txt (line 2))
+process_video	Install Dependencies	2026-06-11T13:09:59.5872304Z   Downloading proglog-0.1.12-py3-none-any.whl.metadata (794 bytes)
+process_video	Install Dependencies	2026-06-11T13:09:59.7735574Z Collecting pillow<12.0,>=9.2.0 (from moviepy->-r requirements.txt (line 2))
+process_video	Install Dependencies	2026-06-11T13:09:59.7775961Z   Downloading pillow-11.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.0 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.8190658Z Collecting tqdm (from proglog<=1.0.0->moviepy->-r requirements.txt (line 2))
+process_video	Install Dependencies	2026-06-11T13:09:59.8223261Z   Downloading tqdm-4.68.2-py3-none-any.whl.metadata (58 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.8404622Z Collecting httplib2<1.0.0,>=0.19.0 (from google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:09:59.8438231Z   Downloading httplib2-0.31.2-py3-none-any.whl.metadata (2.2 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.8809776Z Collecting google-auth!=2.24.0,!=2.25.0,<3.0.0,>=1.32.0 (from google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:09:59.8844295Z   Downloading google_auth-2.53.0-py3-none-any.whl.metadata (5.5 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.9249076Z Collecting google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0,>=1.31.5 (from google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:09:59.9279500Z   Downloading google_api_core-2.31.0-py3-none-any.whl.metadata (3.2 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.9422132Z Collecting uritemplate<5,>=3.0.1 (from google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:09:59.9451477Z   Downloading uritemplate-4.2.0-py3-none-any.whl.metadata (2.6 kB)
+process_video	Install Dependencies	2026-06-11T13:09:59.9634626Z Collecting googleapis-common-protos<2.0.0,>=1.63.2 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0,>=1.31.5->google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:09:59.9662928Z   Downloading googleapis_common_protos-1.75.0-py3-none-any.whl.metadata (8.6 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.1713780Z Collecting protobuf<8.0.0,>=5.29.6 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0,>=1.31.5->google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:10:00.1751056Z   Downloading protobuf-7.35.0-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+process_video	Install Dependencies	2026-06-11T13:10:00.1923307Z Collecting proto-plus<2.0.0,>=1.24.0 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0,>=1.31.5->google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:10:00.1953790Z   Downloading proto_plus-1.28.0-py3-none-any.whl.metadata (2.2 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.2251951Z Collecting pyasn1-modules>=0.2.1 (from google-auth!=2.24.0,!=2.25.0,<3.0.0,>=1.32.0->google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:10:00.2286715Z   Downloading pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.4340671Z Collecting cryptography>=38.0.3 (from google-auth!=2.24.0,!=2.25.0,<3.0.0,>=1.32.0->google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:10:00.4377366Z   Downloading cryptography-48.0.1-cp39-abi3-manylinux_2_34_x86_64.whl.metadata (4.3 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.4725123Z Collecting pyparsing<4,>=3.1 (from httplib2<1.0.0,>=0.19.0->google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:10:00.4758726Z   Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.4986315Z Collecting requests-oauthlib>=0.7.0 (from google-auth-oauthlib->-r requirements.txt (line 7))
+process_video	Install Dependencies	2026-06-11T13:10:00.5017091Z   Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.6136688Z Collecting cffi>=2.0.0 (from cryptography>=38.0.3->google-auth!=2.24.0,!=2.25.0,<3.0.0,>=1.32.0->google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:10:00.6169408Z   Downloading cffi-2.0.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.6337620Z Collecting typing-extensions>=4.13.2 (from cryptography>=38.0.3->google-auth!=2.24.0,!=2.25.0,<3.0.0,>=1.32.0->google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:10:00.6369173Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.6478425Z Collecting pycparser (from cffi>=2.0.0->cryptography>=38.0.3->google-auth!=2.24.0,!=2.25.0,<3.0.0,>=1.32.0->google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:10:00.6513069Z   Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.6745390Z Collecting pyasn1<0.7.0,>=0.6.1 (from pyasn1-modules>=0.2.1->google-auth!=2.24.0,!=2.25.0,<3.0.0,>=1.32.0->google-api-python-client->-r requirements.txt (line 5))
+process_video	Install Dependencies	2026-06-11T13:10:00.6773461Z   Downloading pyasn1-0.6.3-py3-none-any.whl.metadata (8.4 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.6906674Z Collecting oauthlib>=3.0.0 (from requests-oauthlib>=0.7.0->google-auth-oauthlib->-r requirements.txt (line 7))
+process_video	Install Dependencies	2026-06-11T13:10:00.6936191Z   Downloading oauthlib-3.3.1-py3-none-any.whl.metadata (7.9 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.7048544Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.7103669Z Downloading charset_normalizer-3.4.7-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (216 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.7171851Z Downloading idna-3.18-py3-none-any.whl (65 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.7225716Z Downloading urllib3-2.7.0-py3-none-any.whl (131 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.7291333Z Downloading moviepy-2.2.1-py3-none-any.whl (129 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.7350356Z Downloading decorator-5.3.1-py3-none-any.whl (10 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.7400739Z Downloading imageio-2.37.3-py3-none-any.whl (317 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.7490579Z Downloading pillow-11.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.6 MB)
+process_video	Install Dependencies	2026-06-11T13:10:00.8040300Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 123.9 MB/s  0:00:00
+process_video	Install Dependencies	2026-06-11T13:10:00.8080256Z Downloading proglog-0.1.12-py3-none-any.whl (6.3 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.8138707Z Downloading yt_dlp-2026.6.9-py3-none-any.whl (3.2 MB)
+process_video	Install Dependencies	2026-06-11T13:10:00.8368027Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 142.5 MB/s  0:00:00
+process_video	Install Dependencies	2026-06-11T13:10:00.8398360Z Downloading python_dotenv-1.2.2-py3-none-any.whl (22 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.8449014Z Downloading google_api_python_client-2.197.0-py3-none-any.whl (15.3 MB)
+process_video	Install Dependencies	2026-06-11T13:10:00.9269010Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.3/15.3 MB 196.1 MB/s  0:00:00
+process_video	Install Dependencies	2026-06-11T13:10:00.9304022Z Downloading google_auth_httplib2-0.4.0-py3-none-any.whl (9.5 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.9357167Z Downloading google_api_core-2.31.0-py3-none-any.whl (173 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.9413514Z Downloading google_auth-2.53.0-py3-none-any.whl (246 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.9472060Z Downloading googleapis_common_protos-1.75.0-py3-none-any.whl (300 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.9526900Z Downloading httplib2-0.31.2-py3-none-any.whl (91 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.9580003Z Downloading proto_plus-1.28.0-py3-none-any.whl (50 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.9632691Z Downloading protobuf-7.35.0-cp310-abi3-manylinux2014_x86_64.whl (327 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.9689280Z Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.9742839Z Downloading uritemplate-4.2.0-py3-none-any.whl (11 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.9794107Z Downloading google_auth_oauthlib-1.4.0-py3-none-any.whl (19 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.9846204Z Downloading certifi-2026.5.20-py3-none-any.whl (134 kB)
+process_video	Install Dependencies	2026-06-11T13:10:00.9899718Z Downloading cryptography-48.0.1-cp39-abi3-manylinux_2_34_x86_64.whl (4.7 MB)
+process_video	Install Dependencies	2026-06-11T13:10:01.0078150Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 338.2 MB/s  0:00:00
+process_video	Install Dependencies	2026-06-11T13:10:01.0109917Z Downloading cffi-2.0.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (216 kB)
+process_video	Install Dependencies	2026-06-11T13:10:01.0171340Z Downloading imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl (29.5 MB)
+process_video	Install Dependencies	2026-06-11T13:10:01.1668955Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29.5/29.5 MB 201.2 MB/s  0:00:00
+process_video	Install Dependencies	2026-06-11T13:10:01.1701381Z Downloading numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+process_video	Install Dependencies	2026-06-11T13:10:01.2173733Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 369.3 MB/s  0:00:00
+process_video	Install Dependencies	2026-06-11T13:10:01.2210630Z Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+process_video	Install Dependencies	2026-06-11T13:10:01.2268777Z Downloading pyasn1-0.6.3-py3-none-any.whl (83 kB)
+process_video	Install Dependencies	2026-06-11T13:10:01.2320806Z Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+process_video	Install Dependencies	2026-06-11T13:10:01.2373064Z Downloading oauthlib-3.3.1-py3-none-any.whl (160 kB)
+process_video	Install Dependencies	2026-06-11T13:10:01.2428612Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+process_video	Install Dependencies	2026-06-11T13:10:01.2478553Z Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+process_video	Install Dependencies	2026-06-11T13:10:01.2531818Z Downloading tqdm-4.68.2-py3-none-any.whl (78 kB)
+process_video	Install Dependencies	2026-06-11T13:10:01.4778054Z Installing collected packages: yt-dlp, urllib3, uritemplate, typing-extensions, tqdm, python-dotenv, pyparsing, pycparser, pyasn1, protobuf, pillow, oauthlib, numpy, imageio_ffmpeg, idna, decorator, charset_normalizer, certifi, requests, pyasn1-modules, proto-plus, proglog, imageio, httplib2, googleapis-common-protos, cffi, requests-oauthlib, moviepy, cryptography, google-auth, google-auth-oauthlib, google-auth-httplib2, google-api-core, google-api-python-client
+process_video	Install Dependencies	2026-06-11T13:10:08.3753466Z 
+process_video	Install Dependencies	2026-06-11T13:10:08.3806653Z Successfully installed certifi-2026.5.20 cffi-2.0.0 charset_normalizer-3.4.7 cryptography-48.0.1 decorator-5.3.1 google-api-core-2.31.0 google-api-python-client-2.197.0 google-auth-2.53.0 google-auth-httplib2-0.4.0 google-auth-oauthlib-1.4.0 googleapis-common-protos-1.75.0 httplib2-0.31.2 idna-3.18 imageio-2.37.3 imageio_ffmpeg-0.6.0 moviepy-2.2.1 numpy-2.2.6 oauthlib-3.3.1 pillow-11.3.0 proglog-0.1.12 proto-plus-1.28.0 protobuf-7.35.0 pyasn1-0.6.3 pyasn1-modules-0.4.2 pycparser-3.0 pyparsing-3.3.2 python-dotenv-1.2.2 requests-2.34.2 requests-oauthlib-2.0.0 tqdm-4.68.2 typing-extensions-4.15.0 uritemplate-4.2.0 urllib3-2.7.0 yt-dlp-2026.6.9
+process_video	Create Temp Directory	﻿2026-06-11T13:10:08.4732282Z ##[group]Run mkdir -p temp
+process_video	Create Temp Directory	2026-06-11T13:10:08.4732605Z ^[[36;1mmkdir -p temp^[[0m
+process_video	Create Temp Directory	2026-06-11T13:10:08.4766266Z shell: /usr/bin/bash -e {0}
+process_video	Create Temp Directory	2026-06-11T13:10:08.4766529Z env:
+process_video	Create Temp Directory	2026-06-11T13:10:08.4766958Z   TELEGRAM_BOT_TOKEN: ***
+process_video	Create Temp Directory	2026-06-11T13:10:08.4767229Z   TELEGRAM_CHAT_ID: ***
+process_video	Create Temp Directory	2026-06-11T13:10:08.4768474Z   FB_ACCESS_TOKEN: ***
+process_video	Create Temp Directory	2026-06-11T13:10:08.4768729Z   FB_PAGE_ID: ***
+process_video	Create Temp Directory	2026-06-11T13:10:08.4769080Z   VIDEO_SOURCE_URL: https://www.fifa.com/en/tournaments/mens/worldcup/#clips/
+process_video	Create Temp Directory	2026-06-11T13:10:08.4769573Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	Create Temp Directory	2026-06-11T13:10:08.4769999Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+process_video	Create Temp Directory	2026-06-11T13:10:08.4770447Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	Create Temp Directory	2026-06-11T13:10:08.4770833Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	Create Temp Directory	2026-06-11T13:10:08.4771224Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	Create Temp Directory	2026-06-11T13:10:08.4771620Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+process_video	Create Temp Directory	2026-06-11T13:10:08.4771987Z ##[endgroup]
+process_video	1. Downloader Agent	﻿2026-06-11T13:10:08.4864570Z ##[group]Run python downloader/downloader.py
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4864953Z ^[[36;1mpython downloader/downloader.py^[[0m
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4894696Z shell: /usr/bin/bash -e {0}
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4894947Z env:
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4895299Z   TELEGRAM_BOT_TOKEN: ***
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4895569Z   TELEGRAM_CHAT_ID: ***
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4896834Z   FB_ACCESS_TOKEN: ***
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4897084Z   FB_PAGE_ID: ***
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4897434Z   VIDEO_SOURCE_URL: https://www.fifa.com/en/tournaments/mens/worldcup/#clips/
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4897907Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4898340Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4898775Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4899163Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4899554Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4899940Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+process_video	1. Downloader Agent	2026-06-11T13:10:08.4900316Z ##[endgroup]
+process_video	1. Downloader Agent	2026-06-11T13:10:10.8311586Z [generic] Extracting URL: https://www.fifa.com/en/tournaments/mens/worldcup/#clips/
+process_video	1. Downloader Agent	2026-06-11T13:10:10.8313410Z Downloading video from https://www.fifa.com/en/tournaments/mens/worldcup/#clips/ to temp/raw_video.mp4...
+process_video	1. Downloader Agent	2026-06-11T13:10:10.8314779Z [generic] #clips: Downloading webpage
+process_video	1. Downloader Agent	2026-06-11T13:10:10.9459523Z WARNING: [generic] Falling back on generic information extractor
+process_video	1. Downloader Agent	2026-06-11T13:10:10.9465723Z [generic] #clips: Extracting information
+process_video	1. Downloader Agent	2026-06-11T13:10:11.3829763Z ERROR: Unsupported URL: https://www.fifa.com/en/tournaments/mens/worldcup/#clips/
+process_video	1. Downloader Agent	2026-06-11T13:10:14.0867342Z Failed to download video using yt-dlp: ERROR: Unsupported URL: https://www.fifa.com/en/tournaments/mens/worldcup/#clips/
+process_video	1. Downloader Agent	2026-06-11T13:10:14.0868450Z Falling back to dummy file creation for simulation...
+process_video	2. Editor Agent	﻿2026-06-11T13:10:14.1735678Z ##[group]Run python editor/editor.py
+process_video	2. Editor Agent	2026-06-11T13:10:14.1736058Z ^[[36;1mpython editor/editor.py^[[0m
+process_video	2. Editor Agent	2026-06-11T13:10:14.1768743Z shell: /usr/bin/bash -e {0}
+process_video	2. Editor Agent	2026-06-11T13:10:14.1769009Z env:
+process_video	2. Editor Agent	2026-06-11T13:10:14.1769553Z   TELEGRAM_BOT_TOKEN: ***
+process_video	2. Editor Agent	2026-06-11T13:10:14.1769835Z   TELEGRAM_CHAT_ID: ***
+process_video	2. Editor Agent	2026-06-11T13:10:14.1771302Z   FB_ACCESS_TOKEN: ***
+process_video	2. Editor Agent	2026-06-11T13:10:14.1771555Z   FB_PAGE_ID: ***
+process_video	2. Editor Agent	2026-06-11T13:10:14.1771920Z   VIDEO_SOURCE_URL: https://www.fifa.com/en/tournaments/mens/worldcup/#clips/
+process_video	2. Editor Agent	2026-06-11T13:10:14.1772456Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	2. Editor Agent	2026-06-11T13:10:14.1772938Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+process_video	2. Editor Agent	2026-06-11T13:10:14.1773440Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	2. Editor Agent	2026-06-11T13:10:14.1773877Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	2. Editor Agent	2026-06-11T13:10:14.1774566Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	2. Editor Agent	2026-06-11T13:10:14.1775023Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+process_video	2. Editor Agent	2026-06-11T13:10:14.1775434Z ##[endgroup]
+process_video	2. Editor Agent	2026-06-11T13:10:18.8332762Z Editing video from temp/raw_video.mp4 and saving to temp/edited_video.mp4...
+process_video	2. Editor Agent	2026-06-11T13:10:18.8333795Z Failed to edit video using moviepy: No module named 'moviepy.editor'
+process_video	2. Editor Agent	2026-06-11T13:10:18.8335020Z Falling back to dummy file creation for simulation...
+process_video	3. Uploader Agent	﻿2026-06-11T13:10:18.8637349Z ##[group]Run python uploader/uploader.py
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8637727Z ^[[36;1mpython uploader/uploader.py^[[0m
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8669862Z shell: /usr/bin/bash -e {0}
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8670124Z env:
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8670512Z   TELEGRAM_BOT_TOKEN: ***
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8670808Z   TELEGRAM_CHAT_ID: ***
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8672224Z   FB_ACCESS_TOKEN: ***
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8672507Z   FB_PAGE_ID: ***
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8672871Z   VIDEO_SOURCE_URL: https://www.fifa.com/en/tournaments/mens/worldcup/#clips/
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8673379Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8673838Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8674603Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8675026Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8675439Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8675857Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+process_video	3. Uploader Agent	2026-06-11T13:10:18.8676251Z ##[endgroup]
+process_video	3. Uploader Agent	2026-06-11T13:10:29.5388138Z /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/google/api_core/_python_version_support.py:255: FutureWarning: You are using a Python version (3.10.20) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+process_video	3. Uploader Agent	2026-06-11T13:10:29.5391122Z   warnings.warn(message, FutureWarning)
+process_video	3. Uploader Agent	2026-06-11T13:10:32.4940004Z Uploading video temp/edited_video.mp4...
+process_video	3. Uploader Agent	2026-06-11T13:10:32.4940704Z Uploading to Facebook Reels...
+process_video	3. Uploader Agent	2026-06-11T13:10:32.4941366Z Facebook upload successful: https://www.facebook.com/reel/2079965773399868
+process_video	3. Uploader Agent	2026-06-11T13:10:32.4942034Z Uploading to YouTube Shorts...
+process_video	3. Uploader Agent	2026-06-11T13:10:32.4942671Z YouTube Authentication Required. Please follow the prompt in the browser...
+process_video	3. Uploader Agent	2026-06-11T13:10:32.4943596Z YouTube upload encountered an error: [Errno 2] No such file or directory: 'client_secret.json'
+process_video	3. Uploader Agent	2026-06-11T13:10:32.4944632Z Simulating YouTube Upload fallback...
+process_video	3. Uploader Agent	2026-06-11T13:10:32.4945139Z Uploads complete.
+process_video	4. Monitoring, Reporting, and Cleanup Agent	﻿2026-06-11T13:10:32.5334713Z ##[group]Run export EXECUTION_TIME_SECONDS=45 
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5335326Z ^[[36;1mexport EXECUTION_TIME_SECONDS=45 ^[[0m
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5336001Z ^[[36;1mpython cleanup/cleanup.py^[[0m
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5367409Z shell: /usr/bin/bash -e {0}
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5367675Z env:
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5368093Z   TELEGRAM_BOT_TOKEN: ***
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5368364Z   TELEGRAM_CHAT_ID: ***
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5369680Z   FB_ACCESS_TOKEN: ***
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5369929Z   FB_PAGE_ID: ***
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5370300Z   VIDEO_SOURCE_URL: https://www.fifa.com/en/tournaments/mens/worldcup/#clips/
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5370795Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5371244Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5371692Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5372093Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5372500Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5372952Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5373295Z   JOB_STATUS: success
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:32.5373527Z ##[endgroup]
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:33.4045829Z Starting cleanup and final reporting...
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:33.4046670Z Cleaning up temp directory...
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:33.4047274Z Deleted: temp/state_source_url.txt
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:33.4047673Z Deleted: temp/raw_video.mp4
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:33.4048046Z Deleted: temp/edited_video.mp4
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:33.4048423Z Deleted: temp/state_upload.json
+process_video	4. Monitoring, Reporting, and Cleanup Agent	2026-06-11T13:10:33.4048800Z Cleanup finished successfully.
+process_video	Post Set up Python	﻿2026-06-11T13:10:33.4300810Z Post job cleanup.
+process_video	Post Checkout Repository	﻿2026-06-11T13:10:33.6003151Z Post job cleanup.
+process_video	Post Checkout Repository	2026-06-11T13:10:33.6751731Z [command]/usr/bin/git version
+process_video	Post Checkout Repository	2026-06-11T13:10:33.6786903Z git version 2.54.0
+process_video	Post Checkout Repository	2026-06-11T13:10:33.6829572Z Temporarily overriding HOME='/home/runner/work/_temp/993008f1-e5d2-458c-812b-079375f7cd1c' before making global git config changes
+process_video	Post Checkout Repository	2026-06-11T13:10:33.6830867Z Adding repository directory to the temporary git global config as a safe directory
+process_video	Post Checkout Repository	2026-06-11T13:10:33.6833580Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Fifa_world_cup_agent_1/Fifa_world_cup_agent_1
+process_video	Post Checkout Repository	2026-06-11T13:10:33.6863762Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+process_video	Post Checkout Repository	2026-06-11T13:10:33.6892601Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+process_video	Post Checkout Repository	2026-06-11T13:10:33.7110603Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+process_video	Post Checkout Repository	2026-06-11T13:10:33.7133820Z http.https://github.com/.extraheader
+process_video	Post Checkout Repository	2026-06-11T13:10:33.7145375Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+process_video	Post Checkout Repository	2026-06-11T13:10:33.7172327Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+process_video	Complete job	﻿2026-06-11T13:10:33.7495366Z Cleaning up orphan processes
+process_video	Complete job	2026-06-11T13:10:33.7782444Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v3, actions/setup-python@v4. Actions will be forced to run with Node.js 24 by default starting June 16th, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

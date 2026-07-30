@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+ <title>Test Feed</title>
+ <link>http://example.com</link>
+ <item>
+  <title>CR7 Crazy Skill</title>
+  <link>https://www.youtube.com/shorts/HfS0w8PgDxE</link>
+  <id>HfS0w8PgDxE</id>
+ </item>
+</channel>
+</rss>

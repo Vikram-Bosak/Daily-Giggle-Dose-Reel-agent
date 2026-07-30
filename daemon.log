@@ -1,0 +1,433 @@
+Starting Twitter Scanner Agent...
+Scanning 13 profiles for new short videos...
+--- Scanning Profile: https://x.com/WorldCupMedia ---
+Failed to scan profile https://x.com/WorldCupMedia: Page.wait_for_selector: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("article") to be visible
+
+--- Scanning Profile: https://x.com/Waleedahmdd ---
+Could not parse <time> for tweet 2064092579788914762. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/Waleedahmdd/status/2064092579788914762
+Could not parse <time> for tweet 1934000590771667183. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/Waleedahmdd/status/1934000590771667183
+Could not parse <time> for tweet 1934728098638970985. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/Waleedahmdd/status/1934728098638970985
+Could not parse <time> for tweet 1934891993735233557. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/Waleedahmdd/status/1934891993735233557
+Could not parse <time> for tweet 1934742931706978483. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/Waleedahmdd/status/1934742931706978483
+Could not parse <time> for tweet 1934939993912270868. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/Waleedahmdd/status/1934939993912270868
+Could not parse <time> for tweet 1934730634355789941. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/Waleedahmdd/status/1934730634355789941
+Could not parse <time> for tweet 1934001890032853301. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1936287195796582800. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/Waleedahmdd/status/1936287195796582800
+Could not parse <time> for tweet 1935430009671532931. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/Waleedahmdd/status/1935430009671532931
+Could not parse <time> for tweet 1934054988101161222. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/Waleedahmdd/status/1934054988101161222
+--- Scanning Profile: https://x.com/FIFAWC26Updates ---
+Failed to scan profile https://x.com/FIFAWC26Updates: Page.wait_for_selector: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("article") to be visible
+
+--- Scanning Profile: https://x.com/FIFAcom ---
+Could not parse <time> for tweet 2066138081192022453. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2066012229368160410. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2065992633650934065. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2065988552576376856. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FIFAcom/status/2065988552576376856
+Could not parse <time> for tweet 2065972690020679935. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2065945701410820506. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2065909450481795142. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2065886223172878411. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2065871732620103880. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2065850905237282837. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2065826857803743402. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2065823727997387090. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FIFAcom/status/2065823727997387090
+Could not parse <time> for tweet 2065790037929918758. Assuming it is NEW (current time) for prioritization.
+--- Scanning Profile: https://x.com/SkyFootball ---
+Could not parse <time> for tweet 1808247624715456632. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1950161946952581468. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/SkyFootball/status/1950161946952581468
+Could not parse <time> for tweet 1752458337612972413. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1944365964243480962. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1979926151867830651. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/SkyFootball/status/1979926151867830651
+Could not parse <time> for tweet 1895533429610947060. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1756813555922342387. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1597556966821629953. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1753916123798548631. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1808244505898111397. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1877081939904958977. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/SkyFootball/status/1877081939904958977
+Could not parse <time> for tweet 1753475217706332577. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1916196785539764308. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1964316968011415875. Assuming it is NEW (current time) for prioritization.
+--- Scanning Profile: https://x.com/TheSunFootball ---
+Could not parse <time> for tweet 2064992411722391848. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/TheSunFootball/status/2064992411722391848
+Could not parse <time> for tweet 1330980642641809411. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1361397551363153925. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/TheSunFootball/status/1361397551363153925
+Could not parse <time> for tweet 1929089753611145537. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1968387291954503781. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/TheSunFootball/status/1968387291954503781
+Could not parse <time> for tweet 1854583344018694501. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/TheSunFootball/status/1854583344018694501
+Could not parse <time> for tweet 1834547574260248979. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/TheSunFootball/status/1834547574260248979
+Could not parse <time> for tweet 1892930251879039214. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1927722251534709102. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/TheSunFootball/status/1927722251534709102
+Could not parse <time> for tweet 1872291038498611364. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/TheSunFootball/status/1872291038498611364
+Could not parse <time> for tweet 1513543933078482946. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1854611616752419066. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/TheSunFootball/status/1854611616752419066
+Could not parse <time> for tweet 1819042908978442313. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/TheSunFootball/status/1819042908978442313
+Could not parse <time> for tweet 1953885548461867341. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/TheSunFootball/status/1953885548461867341
+--- Scanning Profile: https://x.com/footballontnt ---
+Could not parse <time> for tweet 1525886629226881026. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1886103639715991762. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1887493990301213123. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1958476705309278407. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1393635970893897730. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/footballontnt/status/1393635970893897730
+Could not parse <time> for tweet 1957027155533082691. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1331680485672706048. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/footballontnt/status/1331680485672706048
+Could not parse <time> for tweet 1928929831971893514. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/footballontnt/status/1928929831971893514
+Could not parse <time> for tweet 1964259780484317227. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1928923754882585028. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1928942203260301758. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/footballontnt/status/1928942203260301758
+Could not parse <time> for tweet 1925294218529931454. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/footballontnt/status/1925294218529931454
+Could not parse <time> for tweet 1949809608450539602. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1970238876217409888. Assuming it is NEW (current time) for prioritization.
+--- Scanning Profile: https://x.com/TrollFootball ---
+Could not parse <time> for tweet 1812790884876046344. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1888517195854176379. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1594635415352672257. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1813301490162733547. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1815468528763277444. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1808244343792074948. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1812882070902825244. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1809692597927178748. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1964395856314159529. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1788311560441463031. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1598733690284056576. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1608539617401401344. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1556272866366464001. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1812451197464260869. Assuming it is NEW (current time) for prioritization.
+--- Scanning Profile: https://x.com/Footballtweet ---
+Could not parse <time> for tweet 2066043206093988064. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1940729482723442717. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1601502480042295296. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1828784654914392388. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/Footballtweet/status/1828784654914392388
+Could not parse <time> for tweet 1591348321116749825. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1926025071627301175. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1942590998875443462. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1700250928778273012. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1538594930133815297. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1890310509825577202. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1813851968047051064. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1887777606109380681. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1845353550085267938. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/Footballtweet/status/1845353550085267938
+Could not parse <time> for tweet 1987210724805083524. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/Footballtweet/status/1987210724805083524
+--- Scanning Profile: https://x.com/FBAwayDays ---
+Could not parse <time> for tweet 2065969681610027029. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FBAwayDays/status/2065969681610027029
+Could not parse <time> for tweet 1802735705996636235. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1794302373504159995. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FBAwayDays/status/1794302373504159995
+Could not parse <time> for tweet 1803895554470220052. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FBAwayDays/status/1803895554470220052
+Could not parse <time> for tweet 1953393231800000856. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FBAwayDays/status/1953393231800000856
+Could not parse <time> for tweet 1923834966971920802. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FBAwayDays/status/1923834966971920802
+Could not parse <time> for tweet 1599064589182078978. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1522596858757062659. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FBAwayDays/status/1522596858757062659
+Could not parse <time> for tweet 1700198867667394667. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1736076708686520593. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FBAwayDays/status/1736076708686520593
+Could not parse <time> for tweet 1709145880161386743. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FBAwayDays/status/1709145880161386743
+Could not parse <time> for tweet 1811058501126381707. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FBAwayDays/status/1811058501126381707
+Could not parse <time> for tweet 1707788340156588448. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FBAwayDays/status/1707788340156588448
+--- Scanning Profile: https://x.com/FIFAWorldCup ---
+Could not parse <time> for tweet 2066143451507572802. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FIFAWorldCup/status/2066143451507572802
+Could not parse <time> for tweet 2066128528156893487. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2066113425474986232. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FIFAWorldCup/status/2066113425474986232
+Could not parse <time> for tweet 2066098323564777797. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2066083332686070159. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2066068808192991526. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2066062256912392439. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2066052644032946581. Assuming it is NEW (current time) for prioritization.
+Found video tweet: https://x.com/FIFAWorldCup/status/2066052644032946581
+Could not parse <time> for tweet 2066045836618846641. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2066044464305676613. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2066042199477747878. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2066039179713077727. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 2066030623035404451. Assuming it is NEW (current time) for prioritization.
+--- Scanning Profile: https://x.com/Cristiano ---
+Could not parse <time> for tweet 1932067342357348741. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1815010245615169642. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1931870590807552162. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1520339985559347202. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1871541715636732320. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1516120150533095432. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1594026532934414336. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1871859075761541476. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1517900888312061952. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1856266941800808875. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1890360375448629654. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1806697401106813066. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1871475808491254218. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1979643764630245552. Assuming it is NEW (current time) for prioritization.
+--- Scanning Profile: https://x.com/espnfc ---
+Could not parse <time> for tweet 1600193288467775490. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1604535832290816002. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1608539287095590913. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1599840417742262272. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1608542434937413632. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1599122212329496576. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1608546178064424961. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1601623924600885248. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1529581399409401861. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1582100399984545793. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1599148775674617858. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1536308874147516416. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1573718916899143683. Assuming it is NEW (current time) for prioritization.
+Could not parse <time> for tweet 1604570128166920196. Assuming it is NEW (current time) for prioritization.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Video 2064092579788914762 from https://x.com/Waleedahmdd is already in the queue or processed. Skipping.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Video 1934000590771667183 from https://x.com/Waleedahmdd is already in the queue or processed. Skipping.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Video 1934728098638970985 from https://x.com/Waleedahmdd is already in the queue or processed. Skipping.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/Waleedahmdd/status/1934891993735233557...
+Video 1934891993735233557 is strictly older than 2 hours (Age: 362 days, 4:50:54.430249). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/Waleedahmdd/status/1934742931706978483...
+Video 1934742931706978483 is strictly older than 2 hours (Age: 362 days, 14:43:16.359300). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/Waleedahmdd/status/1934939993912270868...
+Video 1934939993912270868 is strictly older than 2 hours (Age: 362 days, 1:40:16.809160). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/Waleedahmdd/status/1934730634355789941...
+Video 1934730634355789941 is strictly older than 2 hours (Age: 362 days, 15:32:14.928640). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/Waleedahmdd/status/1936287195796582800...
+Video 1936287195796582800 is strictly older than 2 hours (Age: 358 days, 8:27:04.859657). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/Waleedahmdd/status/1935430009671532931...
+Video 1935430009671532931 is strictly older than 2 hours (Age: 360 days, 17:13:16.805420). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/Waleedahmdd/status/1934054988101161222...
+Video 1934054988101161222 is strictly older than 2 hours (Age: 364 days, 12:17:10.741810). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/FIFAcom/status/2065988552576376856...
+Failed to check metadata: Command '['/home/vikramkumarbosak/.gemini/antigravity/scratch/Fifa_world_cup_agent_1/venv/bin/python', '-m', 'yt_dlp', '--dump-json', 'https://x.com/FIFAcom/status/2065988552576376856']' returned non-zero exit status 1.
+Video 2065988552576376856: Could not verify the exact post time. Rejecting to enforce strict time rules.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/FIFAcom/status/2065823727997387090...
+Video 2065823727997387090 is strictly older than 2 hours (Age: 21:35:20.001172). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/SkyFootball/status/1950161946952581468...
+Video 1950161946952581468 is strictly older than 2 hours (Age: 320 days, 1:33:59.943288). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/SkyFootball/status/1979926151867830651...
+Video 1979926151867830651 is strictly older than 2 hours (Age: 237 days, 22:21:43.376501). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/SkyFootball/status/1877081939904958977...
+Video 1877081939904958977 is strictly older than 2 hours (Age: 521 days, 17:27:57.412059). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/TheSunFootball/status/2064992411722391848...
+Video 2064992411722391848 is strictly older than 2 hours (Age: 3 days, 4:38:51.863254). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/TheSunFootball/status/1361397551363153925...
+Video 1361397551363153925 is strictly older than 2 hours (Age: 1944 days, 17:53:42.200476). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/TheSunFootball/status/1968387291954503781...
+Video 1968387291954503781 is strictly older than 2 hours (Age: 269 days, 18:33:14.450496). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/TheSunFootball/status/1854583344018694501...
+Video 1854583344018694501 is strictly older than 2 hours (Age: 583 days, 19:29:32.563337). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/TheSunFootball/status/1834547574260248979...
+Video 1834547574260248979 is strictly older than 2 hours (Age: 639 days, 2:24:35.498947). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/TheSunFootball/status/1927722251534709102...
+Video 1927722251534709102 is strictly older than 2 hours (Age: 381 days, 23:41:44.038679). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/TheSunFootball/status/1872291038498611364...
+Video 1872291038498611364 is strictly older than 2 hours (Age: 534 days, 22:45:38.043433). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/TheSunFootball/status/1854611616752419066...
+Video 1854611616752419066 is strictly older than 2 hours (Age: 583 days, 17:37:23.009842). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/TheSunFootball/status/1819042908978442313...
+Video 1819042908978442313 is strictly older than 2 hours (Age: 681 days, 21:14:47.006310). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/TheSunFootball/status/1953885548461867341...
+Video 1953885548461867341 is strictly older than 2 hours (Age: 309 days, 18:58:20.022645). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/footballontnt/status/1393635970893897730...
+Video 1393635970893897730 is strictly older than 2 hours (Age: 1855 days, 18:50:10.905295). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/footballontnt/status/1331680485672706048...
+Video 1331680485672706048 is strictly older than 2 hours (Age: 2026 days, 17:59:12.860400). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/footballontnt/status/1928929831971893514...
+Video 1928929831971893514 is strictly older than 2 hours (Age: 378 days, 15:43:34.720602). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/footballontnt/status/1928942203260301758...
+Video 1928942203260301758 is strictly older than 2 hours (Age: 378 days, 14:54:28.904084). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/footballontnt/status/1925294218529931454...
+Video 1925294218529931454 is strictly older than 2 hours (Age: 388 days, 16:30:19.538243). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/Footballtweet/status/1828784654914392388...
+Video 1828784654914392388 is strictly older than 2 hours (Age: 655 days, 0:04:55.515629). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/Footballtweet/status/1845353550085267938...
+Video 1845353550085267938 is strictly older than 2 hours (Age: 609 days, 6:46:05.148877). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/Footballtweet/status/1987210724805083524...
+Video 1987210724805083524 is strictly older than 2 hours (Age: 217 days, 19:56:22.651421). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/FBAwayDays/status/2065969681610027029...
+Video 2065969681610027029 is strictly older than 2 hours (Age: 11:56:27.778264). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/FBAwayDays/status/1794302373504159995...
+Video 1794302373504159995 is strictly older than 2 hours (Age: 750 days, 3:45:23.176397). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/FBAwayDays/status/1803895554470220052...
+Video 1803895554470220052 is strictly older than 2 hours (Age: 723 days, 16:25:34.156117). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/FBAwayDays/status/1953393231800000856...
+Video 1953393231800000856 is strictly older than 2 hours (Age: 311 days, 3:35:12.943281). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/FBAwayDays/status/1923834966971920802...
+Video 1923834966971920802 is strictly older than 2 hours (Age: 392 days, 17:09:15.322320). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/FBAwayDays/status/1522596858757062659...
+Video 1522596858757062659 is strictly older than 2 hours (Age: 1499 days, 22:06:17.008867). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/FBAwayDays/status/1736076708686520593...
+Video 1736076708686520593 is strictly older than 2 hours (Age: 910 days, 19:53:37.144217). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/FBAwayDays/status/1709145880161386743...
+Video 1709145880161386743 is strictly older than 2 hours (Age: 985 days, 3:27:09.293719). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/FBAwayDays/status/1811058501126381707...
+Video 1811058501126381707 is strictly older than 2 hours (Age: 703 days, 22:02:48.544000). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/FBAwayDays/status/1707788340156588448...
+Video 1707788340156588448 is strictly older than 2 hours (Age: 988 days, 21:21:36.344538). Skipping old video.
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+Checking metadata for https://x.com/FIFAWorldCup/status/2066143451507572802...
+Error loading queue: Expecting property name enclosed in double quotes: line 51 column 1 (char 2286)
+✅ Added NEW video to Queue: https://x.com/FIFAWorldCup/status/2066143451507572802 with msg_id: 162
+Checking metadata for https://x.com/FIFAWorldCup/status/2066113425474986232...
+Video 2066113425474986232 is strictly older than 2 hours (Age: 2:25:45.119289). Skipping old video.
+Checking metadata for https://x.com/FIFAWorldCup/status/2066052644032946581...
+Video 2066052644032946581 is strictly older than 2 hours (Age: 6:27:19.164543). Skipping old video.
+Scanner completed. 1 new videos added to the queue.
+ffmpeg version 5.1.9-0+deb12u1 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 12 (Debian 12.2.0-14+deb12u1)
+  configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/vikramkumarbosak/.gemini/antigravity/scratch/Fifa_world_cup_agent_1/temp/2066143451507572802.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf59.27.100
+  Duration: 00:00:17.37, start: 0.000000, bitrate: 4005 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1080x1920, 3872 kb/s, 25 fps, 25 tbr, 2500k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : GPAC-2.2.1-revrelease
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Input #1, png_pipe, from 'assets/custom_logo.png':
+  Duration: N/A, bitrate: N/A
+  Stream #1:0: Video: png, rgba(pc), 1024x1024, 25 fps, 25 tbr, 25 tbn
+Input #2, png_pipe, from 'temp/hook_overlay.png':
+  Duration: N/A, bitrate: N/A
+  Stream #2:0: Video: png, rgba(pc), 1000x340, 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 (h264) -> hflip:default
+  Stream #0:1 (aac) -> volume:default
+  Stream #1:0 (png) -> scale:default
+  Stream #2:0 (png) -> scale:default
+  drawbox:default -> Stream #0:0 (libx264)
+  loudnorm:default -> Stream #0:1 (aac)
+Press [q] to stop, [?] for help
+[libx264 @ 0x55fa31ec9240] using SAR=1/1
+[libx264 @ 0x55fa31ec9240] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x55fa31ec9240] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x55fa31ec9240] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'temp/edited_20260614_132542_2066143451507572802.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf59.27.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 1080x1440 [SAR 1:1 DAR 3:4], q=2-31, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc59.37.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 96000 Hz, stereo, fltp, 128 kb/s
+    Metadata:
+      encoder         : Lavc59.37.100 aac
+frame=    1 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=    2 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=    2 fps=1.8 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=    2 fps=1.2 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=    2 fps=0.9 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=    9 fps=3.4 q=0.0 size=       0kB time=00:00:00.27 bitrate=   1.4kbits/s speed=0.104x    frame=   19 fps=6.0 q=0.0 size=       0kB time=00:00:00.67 bitrate=   0.6kbits/s speed=0.211x    frame=   29 fps=7.8 q=0.0 size=       0kB time=00:00:01.07 bitrate=   0.4kbits/s speed=0.29x    frame=   36 fps=8.5 q=0.0 size=       0kB time=00:00:01.37 bitrate=   0.3kbits/s speed=0.324x    frame=   44 fps=9.2 q=0.0 size=       0kB time=00:00:01.77 bitrate=   0.2kbits/s speed=0.372x    frame=   51 fps=9.7 q=28.0 size=       0kB time=00:00:01.97 bitrate=   0.2kbits/s speed=0.374x    frame=   61 fps= 11 q=28.0 size=     256kB time=00:00:02.36 bitrate= 885.8kbits/s speed=0.409x    frame=   69 fps= 11 q=28.0 size=     512kB time=00:00:02.67 bitrate=1566.7kbits/s speed=0.425x    frame=   79 fps= 12 q=28.0 size=     512kB time=00:00:03.07 bitrate=1365.5kbits/s speed=0.452x    frame=   86 fps= 12 q=28.0 size=     768kB time=00:00:03.37 bitrate=1866.6kbits/s speed=0.462x    frame=   96 fps= 12 q=28.0 size=    1024kB time=00:00:03.77 bitrate=2221.7kbits/s speed=0.483x    frame=  104 fps= 12 q=28.0 size=    1024kB time=00:00:04.07 bitrate=2058.8kbits/s speed=0.489x    frame=  113 fps= 13 q=28.0 size=    1280kB time=00:00:04.46 bitrate=2346.2kbits/s speed=0.505x    frame=  122 fps= 13 q=28.0 size=    1536kB time=00:00:04.76 bitrate=2639.1kbits/s speed=0.509x    frame=  131 fps= 13 q=28.0 size=    1792kB time=00:00:05.17 bitrate=2837.7kbits/s speed=0.524x    frame=  140 fps= 14 q=28.0 size=    1792kB time=00:00:05.56 bitrate=2636.6kbits/s speed=0.537x    frame=  149 fps= 14 q=28.0 size=    2048kB time=00:00:05.87 bitrate=2854.6kbits/s speed=0.54x    frame=  159 fps= 14 q=28.0 size=    2304kB time=00:00:06.27 bitrate=3009.4kbits/s speed=0.551x    frame=  166 fps= 14 q=28.0 size=    2304kB time=00:00:06.67 bitrate=2826.7kbits/s speed=0.561x    frame=  176 fps= 14 q=28.0 size=    2560kB time=00:00:06.97 bitrate=3006.3kbits/s speed=0.561x    frame=  186 fps= 14 q=28.0 size=    2816kB time=00:00:07.37 bitrate=3129.8kbits/s speed=0.569x    frame=  193 fps= 14 q=28.0 size=    2816kB time=00:00:07.77 bitrate=2966.7kbits/s speed=0.578x    frame=  204 fps= 15 q=28.0 size=    3072kB time=00:00:08.07 bitrate=3116.7kbits/s speed=0.577x    frame=  213 fps= 15 q=25.0 size=    3328kB time=00:00:08.46 bitrate=3219.1kbits/s speed=0.585x    frame=  222 fps= 15 q=28.0 size=    3328kB time=00:00:08.76 bitrate=3109.4kbits/s speed=0.585x    frame=  231 fps= 15 q=28.0 size=    3584kB time=00:00:09.17 bitrate=3200.6kbits/s speed=0.592x    frame=  240 fps= 15 q=28.0 size=    3840kB time=00:00:09.56 bitrate=3287.8kbits/s speed=0.597x    frame=  249 fps= 15 q=28.0 size=    4096kB time=00:00:09.87 bitrate=3397.2kbits/s speed=0.596x    frame=  259 fps= 15 q=28.0 size=    4352kB time=00:00:10.27 bitrate=3470.8kbits/s speed=0.602x    frame=  268 fps= 15 q=28.0 size=    4608kB time=00:00:10.67 bitrate=3535.4kbits/s speed=0.608x    frame=  276 fps= 15 q=28.0 size=    4864kB time=00:00:10.97 bitrate=3630.3kbits/s speed=0.607x    frame=  286 fps= 15 q=28.0 size=    5120kB time=00:00:11.37 bitrate=3688.7kbits/s speed=0.612x    frame=  295 fps= 15 q=28.0 size=    5376kB time=00:00:11.77 bitrate=3739.9kbits/s speed=0.616x    frame=  304 fps= 15 q=28.0 size=    5376kB time=00:00:12.17 bitrate=3618.6kbits/s speed=0.62x    frame=  313 fps= 16 q=28.0 size=    5632kB time=00:00:12.46 bitrate=3700.1kbits/s speed=0.619x    frame=  324 fps= 16 q=28.0 size=    5888kB time=00:00:12.87 bitrate=3746.5kbits/s speed=0.624x    frame=  333 fps= 16 q=28.0 size=    5888kB time=00:00:13.26 bitrate=3635.1kbits/s speed=0.628x    frame=  342 fps= 16 q=28.0 size=    6144kB time=00:00:13.56 bitrate=3709.6kbits/s speed=0.625x    frame=  349 fps= 16 q=28.0 size=    6400kB time=00:00:13.97 bitrate=3752.1kbits/s speed=0.629x    frame=  359 fps= 16 q=28.0 size=    6656kB time=00:00:14.27 bitrate=3820.5kbits/s speed=0.629x    frame=  363 fps= 16 q=28.0 size=    6656kB time=00:00:17.33 bitrate=3145.8kbits/s speed=0.745x    frame=  383 fps= 16 q=28.0 size=    7168kB time=00:00:17.33 bitrate=3387.7kbits/s speed=0.729x    frame=  399 fps= 16 q=28.0 size=    7424kB time=00:00:17.33 bitrate=3508.7kbits/s speed=0.714x    frame=  419 fps= 17 q=28.0 size=    7680kB time=00:00:17.33 bitrate=3629.7kbits/s speed=0.699x    frame=  441 fps= 17 q=28.0 size=    7936kB time=00:00:17.34 bitrate=3748.4kbits/s speed=0.686x    frame=  464 fps= 18 q=28.0 size=    8192kB time=00:00:17.34 bitrate=3869.3kbits/s speed=0.672x    frame=  490 fps= 19 q=28.0 size=    8192kB time=00:00:17.64 bitrate=3804.4kbits/s speed=0.67x    frame=  516 fps= 19 q=28.0 size=    8192kB time=00:00:18.68 bitrate=3592.6kbits/s speed=0.696x    frame=  543 fps= 20 q=28.0 size=    8192kB time=00:00:19.76 bitrate=3396.2kbits/s speed=0.723x    frame=  571 fps= 21 q=28.0 size=    8192kB time=00:00:20.88 bitrate=3214.0kbits/s speed=0.75x    frame=  599 fps= 21 q=28.0 size=    8192kB time=00:00:22.00 bitrate=3050.4kbits/s speed=0.776x    frame=  626 fps= 22 q=28.0 size=    8192kB time=00:00:23.08 bitrate=2907.7kbits/s speed= 0.8x    frame=  653 fps= 22 q=28.0 size=    8192kB time=00:00:24.16 bitrate=2777.7kbits/s speed=0.822x    frame=  680 fps= 23 q=28.0 size=    8192kB time=00:00:25.24 bitrate=2658.8kbits/s speed=0.845x    frame=  708 fps= 23 q=28.0 size=    8192kB time=00:00:26.36 bitrate=2545.9kbits/s speed=0.867x    frame=  737 fps= 24 q=28.0 size=    8192kB time=00:00:27.52 bitrate=2438.6kbits/s speed=0.891x    frame=  764 fps= 24 q=28.0 size=    8192kB time=00:00:28.60 bitrate=2346.5kbits/s speed=0.911x    frame=  791 fps= 25 q=28.0 size=    8192kB time=00:00:29.68 bitrate=2261.1kbits/s speed=0.93x    frame=  818 fps= 25 q=28.0 size=    8192kB time=00:00:30.76 bitrate=2181.7kbits/s speed=0.948x    frame=  845 fps= 26 q=28.0 size=    8448kB time=00:00:31.84 bitrate=2173.6kbits/s speed=0.967x    frame=  873 fps= 26 q=28.0 size=    8448kB time=00:00:32.96 bitrate=2099.7kbits/s speed=0.985x    frame=  899 fps= 26 q=28.0 size=    8448kB time=00:00:34.00 bitrate=2035.5kbits/s speed=   1x    frame=  927 fps= 27 q=28.0 size=    8448kB time=00:00:35.12 bitrate=1970.6kbits/s speed=1.02x    frame=  954 fps= 27 q=28.0 size=    8448kB time=00:00:36.20 bitrate=1911.8kbits/s speed=1.04x    frame=  982 fps= 28 q=28.0 size=    8448kB time=00:00:37.32 bitrate=1854.4kbits/s speed=1.05x    frame= 1010 fps= 28 q=28.0 size=    8448kB time=00:00:38.44 bitrate=1800.4kbits/s speed=1.07x    frame= 1037 fps= 28 q=28.0 size=    8448kB time=00:00:39.52 bitrate=1751.2kbits/s speed=1.08x    frame= 1064 fps= 29 q=28.0 size=    8448kB time=00:00:40.60 bitrate=1704.6kbits/s speed= 1.1x    frame= 1092 fps= 29 q=28.0 size=    8448kB time=00:00:41.72 bitrate=1658.8kbits/s speed=1.11x    frame= 1120 fps= 29 q=28.0 size=    8448kB time=00:00:42.84 bitrate=1615.5kbits/s speed=1.13x    frame= 1148 fps= 30 q=28.0 size=    8704kB time=00:00:43.96 bitrate=1622.0kbits/s speed=1.14x    frame= 1175 fps= 30 q=28.0 size=    8704kB time=00:00:45.04 bitrate=1583.1kbits/s speed=1.15x    frame= 1202 fps= 30 q=28.0 size=    8704kB time=00:00:46.12 bitrate=1546.0kbits/s speed=1.17x    frame= 1230 fps= 31 q=28.0 size=    8704kB time=00:00:47.24 bitrate=1509.4kbits/s speed=1.18x    frame= 1257 fps= 31 q=28.0 size=    8704kB time=00:00:48.32 bitrate=1475.7kbits/s speed=1.19x    frame= 1283 fps= 31 q=28.0 size=    8704kB time=00:00:49.36 bitrate=1444.6kbits/s speed= 1.2x    frame= 1310 fps= 31 q=28.0 size=    8704kB time=00:00:50.44 bitrate=1413.6kbits/s speed=1.21x    frame= 1337 fps= 32 q=28.0 size=    8704kB time=00:00:51.52 bitrate=1384.0kbits/s speed=1.22x    frame= 1364 fps= 32 q=28.0 size=    8704kB time=00:00:52.60 bitrate=1355.6kbits/s speed=1.23x    frame= 1392 fps= 32 q=28.0 size=    8704kB time=00:00:53.72 bitrate=1327.3kbits/s speed=1.25x    frame= 1421 fps= 33 q=28.0 size=    8704kB time=00:00:54.88 bitrate=1299.3kbits/s speed=1.26x    frame= 1448 fps= 33 q=28.0 size=    8704kB time=00:00:55.96 bitrate=1274.2kbits/s speed=1.27x    frame= 1475 fps= 33 q=28.0 size=    8704kB time=00:00:57.04 bitrate=1250.1kbits/s speed=1.28x    frame= 1475 fps= 33 q=-1.0 Lsize=    9102kB time=00:00:58.88 bitrate=1266.3kbits/s speed=1.31x    
+video:8799kB audio:272kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.340965%
+[libx264 @ 0x55fa31ec9240] frame I:7     Avg QP:17.22  size:118771
+[libx264 @ 0x55fa31ec9240] frame P:384   Avg QP:17.39  size:  8395
+[libx264 @ 0x55fa31ec9240] frame B:1084  Avg QP:28.00  size:  4570
+[libx264 @ 0x55fa31ec9240] consecutive B-frames:  1.2%  1.5%  2.6% 94.6%
+[libx264 @ 0x55fa31ec9240] mb I  I16..4: 29.8% 51.0% 19.2%
+[libx264 @ 0x55fa31ec9240] mb P  I16..4:  5.0%  7.9%  1.1%  P16..4:  5.3%  1.3%  0.6%  0.0%  0.0%    skip:78.8%
+[libx264 @ 0x55fa31ec9240] mb B  I16..4:  1.6%  3.7%  0.2%  B16..8:  4.8%  1.5%  0.1%  direct: 3.9%  skip:84.2%  L0:46.0% L1:47.8% BI: 6.2%
+[libx264 @ 0x55fa31ec9240] 8x8 transform intra:61.4% inter:63.2%
+[libx264 @ 0x55fa31ec9240] coded y,uvDC,uvAC intra: 39.1% 78.4% 34.6% inter: 2.4% 7.0% 0.5%
+[libx264 @ 0x55fa31ec9240] i16 v,h,dc,p: 26% 19%  8% 47%
+[libx264 @ 0x55fa31ec9240] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 19% 21%  6%  6%  7%  7%  6%  5%
+[libx264 @ 0x55fa31ec9240] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31% 21% 12%  6%  7%  7%  6%  6%  4%
+[libx264 @ 0x55fa31ec9240] i8c dc,h,v,p: 45% 21% 23% 11%
+[libx264 @ 0x55fa31ec9240] Weighted P-Frames: Y:0.3% UV:0.0%
+[libx264 @ 0x55fa31ec9240] ref P L0: 77.5% 22.5%
+[libx264 @ 0x55fa31ec9240] ref B L0: 86.0% 14.0%
+[libx264 @ 0x55fa31ec9240] ref B L1: 95.0%  5.0%
+[libx264 @ 0x55fa31ec9240] kb/s:1221.59
+[aac @ 0x55fa31ed4980] Qavg: 1116.031
