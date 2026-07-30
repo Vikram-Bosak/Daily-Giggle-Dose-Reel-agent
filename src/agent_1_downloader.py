@@ -93,85 +93,88 @@ def search_and_download_latest_video():
     valid_videos = []
     
     if search_query:
-        encoded_query = urllib.parse.quote(search_query)
-        stats["profiles_scanned"] += 1
-        print(f"--------------------------------------------------")
-        print(f"Checking X Search query: {search_query}")
-        
-        rss_fetched = False
-        items = []
-        for instance in nitter_instances:
-            url = f"{instance}/search/rss?q={encoded_query}"
-            try:
-                headers = {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-                }
-                req = urllib.request.Request(url, headers=headers)
-                with urllib.request.urlopen(req, timeout=15) as response:
-                    xml_data = response.read()
-                    root = ET.fromstring(xml_data)
-                    items = root.findall('.//item')
-                    rss_fetched = True
-                    break
-            except Exception as e:
-                print(f"Failed to fetch search RSS {url}: {e}")
-                
-        if not rss_fetched:
-            print(f"Could not fetch search RSS for query '{search_query}' on any Nitter instance.")
-            stats["errors"].append(f"Search RSS Fetch Error for query")
+        queries = [q.strip() for q in search_query.split(",") if q.strip()]
+        for q in queries:
+            encoded_query = urllib.parse.quote(q)
+            stats["profiles_scanned"] += 1
+            print(f"--------------------------------------------------")
+            print(f"Checking X Search query: {q}")
             
-        for item in items:
-            title = item.find('title').text if item.find('title') is not None else ""
-            link = item.find('link').text if item.find('link') is not None else ""
-            pubDate_str = item.find('pubDate').text if item.find('pubDate') is not None else ""
-            desc = item.find('description').text if item.find('description') is not None else ""
-            
-            if not link or not pubDate_str:
+            rss_fetched = False
+            items = []
+            for instance in nitter_instances:
+                url = f"{instance}/search/rss?q={encoded_query}"
+                try:
+                    headers = {
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                    }
+                    req = urllib.request.Request(url, headers=headers)
+                    with urllib.request.urlopen(req, timeout=15) as response:
+                        xml_data = response.read()
+                        root = ET.fromstring(xml_data)
+                        items = root.findall('.//item')
+                        rss_fetched = True
+                        break
+                except Exception as e:
+                    print(f"Failed to fetch search RSS {url}: {e}")
+                    
+            if not rss_fetched:
+                print(f"Could not fetch search RSS for query '{q}' on any Nitter instance.")
+                stats["errors"].append(f"Search RSS Fetch Error for query: {q}")
                 continue
                 
-            # 1. Check if it's a video
-            if ">Video<" not in desc and "Video" not in desc:
-                continue
+            for item in items:
+                title = item.find('title').text if item.find('title') is not None else ""
+                link = item.find('link').text if item.find('link') is not None else ""
+                pubDate_str = item.find('pubDate').text if item.find('pubDate') is not None else ""
+                desc = item.find('description').text if item.find('description') is not None else ""
                 
-            # 2. Extract tweet ID and check history
-            try:
-                tweet_id = link.split("/status/")[1].split("#")[0].split("?")[0]
-            except Exception:
-                continue
+                if not link or not pubDate_str:
+                    continue
+                    
+                # 1. Check if it's a video
+                if ">Video<" not in desc and "Video" not in desc:
+                    continue
+                    
+                # 2. Extract tweet ID and check history
+                try:
+                    tweet_id = link.split("/status/")[1].split("#")[0].split("?")[0]
+                except Exception:
+                    continue
+                    
+                # 3. Check exact post time
+                try:
+                    post_time = parsedate_to_datetime(pubDate_str)
+                    if post_time.tzinfo is None:
+                        post_time = post_time.replace(tzinfo=timezone.utc)
+                except Exception as e:
+                    print(f"Error parsing date {pubDate_str}: {e}")
+                    continue
+                    
+                if post_time < time_limit:
+                    continue
+                    
+                # It is a recent video
+                stats["new_videos_found"] += 1
                 
-            # 3. Check exact post time
-            try:
-                post_time = parsedate_to_datetime(pubDate_str)
-                if post_time.tzinfo is None:
-                    post_time = post_time.replace(tzinfo=timezone.utc)
-            except Exception as e:
-                print(f"Error parsing date {pubDate_str}: {e}")
-                continue
-                
-            if post_time < time_limit:
-                continue
-                
-            # It is a recent video
-            stats["new_videos_found"] += 1
-            
-            if tweet_id in history:
-                print(f"Video {tweet_id} already in history, skipping...")
-                stats["videos_skipped"] += 1
-                continue
-                
-            # Try to resolve username from Nitter link if possible (e.g. nitter.net/username/status/123)
-            username_resolved = "funny_search"
-            try:
-                username_resolved = link.split(".net/")[1].split("/status/")[0]
-            except Exception:
-                pass
-                
-            original_tweet_url = f"https://x.com/{username_resolved}/status/{tweet_id}"
-            valid_videos.append({
-                "tweet_id": tweet_id,
-                "url": original_tweet_url,
-                "post_time": post_time
-            })
+                if tweet_id in history:
+                    print(f"Video {tweet_id} already in history, skipping...")
+                    stats["videos_skipped"] += 1
+                    continue
+                    
+                # Try to resolve username from Nitter link if possible (e.g. nitter.net/username/status/123)
+                username_resolved = "funny_search"
+                try:
+                    username_resolved = link.split(".net/")[1].split("/status/")[0]
+                except Exception:
+                    pass
+                    
+                original_tweet_url = f"https://x.com/{username_resolved}/status/{tweet_id}"
+                valid_videos.append({
+                    "tweet_id": tweet_id,
+                    "url": original_tweet_url,
+                    "post_time": post_time
+                })
             
     else:
         for username in usernames:
