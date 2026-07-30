@@ -95,6 +95,40 @@ def _extract_gemini_video_context(video_path: str) -> str:
         return ""
 
 
+def clean_input_title(title: str) -> str:
+    if not title:
+        return ""
+    # Remove URLs
+    title = re.sub(r'https?://\S+', '', title)
+    # Remove handles (e.g. .@username or @username)
+    title = re.sub(r'\.?@\w+', '', title)
+    # Remove hashtag terms (e.g. #Football)
+    title = re.sub(r'#\w+', '', title)
+    
+    # Strip platform names and specific brand names case-insensitively
+    bad_platforms = [
+        r'\b9gag\b', r'\bmemeland\b', r'\btiktok\b', r'\btwitter\b', r'\bfacebook\b',
+        r'\byoutube\b', r'\binstagram\b', r'\breels\b', r'\bshorts\b', r'\breddit\b',
+        r'\bnitter\b', r'\bsnapchat\b', r'\bpinterest\b', r'\bx\.com\b', r'\bpotatox\b', r'\bpotatoz\b'
+    ]
+    for pattern in bad_platforms:
+        title = re.sub(pattern, '', title, flags=re.IGNORECASE)
+        
+    # Replace hyphens/underscores with spaces
+    title = re.sub(r'[-_]', ' ', title)
+    # Clean up extra spacing
+    title = re.sub(r'\s+', ' ', title)
+    return title.strip()
+
+def extract_json_from_text(content: str) -> dict:
+    content = content.strip()
+    start = content.find('{')
+    end = content.rfind('}')
+    if start != -1 and end != -1:
+        json_str = content[start:end+1]
+        return json.loads(json_str)
+    raise ValueError("No valid JSON block found in content")
+
 # ──────────────────────────────────────────────────────────────────────────────
 # Stage 1 – Analyze video for editing (improved prompts)
 # ──────────────────────────────────────────────────────────────────────────────
@@ -104,17 +138,19 @@ def analyze_video_for_editing(context: dict) -> dict:
     """
     client = _get_client()
     original_title = context.get('title', '')
+    clean_title = clean_input_title(original_title)
+    
     fallback = {
         "category": "Meme",
         "short_headline": (
-            original_title[:35] + "..."
-            if len(original_title) > 35
-            else (original_title if original_title else "FUNNY MEME MOMENT 😂🔥")
+            clean_title[:35] + "..."
+            if len(clean_title) > 35
+            else (clean_title if clean_title else "FUNNY MEME MOMENT 😂🔥")
         ),
         "story": (
-            original_title
-            if original_title
-            else "Try not to laugh at this hilarious moment! Watch until the end for the best part! 😂"
+            clean_title
+            if clean_title
+            else "Try not to laugh at this hilarious moment! Watch until the end! 😂"
         ),
         "overlay_text": "😂 HILARIOUS MUST-WATCH MEME",
         "safety_flags": [],
@@ -146,7 +182,7 @@ def analyze_video_for_editing(context: dict) -> dict:
 Analyze the video context and metadata carefully to ensure absolute compliance with Facebook's Community Standards and Copyright/Rights Manager policies.
 
 === SOURCE OF TRUTH ===
-Original Title/Text: {context.get('title', 'Unknown')}
+Original Title/Text (CLEANED): {clean_title}
 Source Profile: {context.get('source', 'Unknown')}
 {f"Deep AI Video Context: {context.get('deep_context', '')[:800]}" if context.get('deep_context') else ""}
 {trending_snippet}
@@ -155,14 +191,19 @@ Source Profile: {context.get('source', 'Unknown')}
 Analyze the "Original Title/Text" and any visual context. Identify:
 1. Exact comedy style, meme type, or funny situation.
 2. The emotional hook (e.g., hilarious fail, awkward situation, cute/funny pet, funny prank).
-3. The content safety risks:
-   - Does this show graphic real-world violence, severe injuries, or dangerous activities?
-   - Is it a highly sensitive meme containing geopolitical or hateful topics?
-   - Does it use copy-protected audio or watermark tags that might trigger Rights Manager?
+3. The content safety risks.
+
+=== CRITICAL RULES ===
+1. **NO BRAND NAMES OR PLATFORM NAMES:** The fields `short_headline` and `story` MUST NOT contain any platform names, creator handles, or social media networks (e.g. 9GAG, Memeland, TikTok, Twitter, YouTube, Instagram, Facebook, etc.). Remove them completely.
+2. **HIGH-ENGAGEMENT OVERLAY TEXT:** 
+   - The field `story` will be written directly on the video overlay. It MUST be extremely short (3 to 6 words max), highly engaging, relatable, and attention-grabbing.
+   - Example: "POV: AFTER A STRESSFUL CALL", "SOME STRUGGLES STAY HIDDEN", "EXPECT THE UNEXPECTED 😂", "THE FACE OF PURE REGRET 💀".
+   - Make it a hook sentence that causes viewers to immediately stop scrolling.
+3. **UNIQUE OUTPUTS:** Ensure each output is unique and highly specific to the video's actual content. Do not reuse generic templates.
 
 Then generate:
 1. **short_headline** – 3-6 words max, ALL CAPS, punchy, in ENGLISH. Include 1 relevant emoji.
-2. **story** – A 2-3 sentence conversational paragraph hyping the video.
+2. **story** – A very short, punchy hook sentence (3-6 words max) to be written on the video overlay. No brands/handles!
 3. **category** – "Fail", "Meme", "Prank", "Animal", "Comedy Sketch", "Awkward", "Cute", "Stupidity", "Humor".
 4. **safety_flags** – List containing flags if present: "violence" (casualties/blood/severe injuries), "sensitive_meme" (hateful/political/bullying), "copyright_audio" (heavy commentary), "broadcaster_watermark" (visible logos). Empty list if clean.
 5. **safety_actions** – Actions required to make the video safe: "mute_audio" (if audio risk), "flip_horizontal" (to avoid visual match), "trim_video" (if too long or ends in unsafe content). Empty list if clean.
@@ -185,16 +226,16 @@ Return ONLY a valid JSON object with these exact keys:
             timeout=45,
         )
         content = completion.choices[0].message.content.strip()
-        if content.startswith("```json"): content = content[7:]
-        if content.startswith("```"): content = content[3:]
-        if content.endswith("```"): content = content[:-3]
-        
-        data = json.loads(content.strip())
+        data = extract_json_from_text(content)
         
         for key in fallback.keys():
             if key not in data:
                 data[key] = fallback[key]
                 
+        # Clean brand/platform names from story and short_headline inside LLM result just in case
+        data["story"] = clean_input_title(data["story"])
+        data["short_headline"] = clean_input_title(data["short_headline"])
+        
         return data
     except Exception as e:
         print(f"Error calling NVIDIA LLM API for editing analysis: {e}")
