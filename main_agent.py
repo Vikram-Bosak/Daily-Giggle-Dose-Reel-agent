@@ -31,6 +31,14 @@ def write_report(report_data):
 def run_single_sequence():
     print("\n--- STARTING SEQUENTIAL PIPELINE (SINGLE RUN) ---")
     
+    import random
+    # 25% chance to skip this scheduled run to prevent machine-like periodic posting
+    if random.random() < 0.25:
+        print("Organic human behavior simulation: Skipping this scheduled run to create natural posting gaps.")
+        from src.common.discord import send_discord_message
+        send_discord_message("💤 **Organic Post Break:** Skipping this scheduled run to simulate natural human posting gaps and prevent Facebook Inauthentic Behavior flags.")
+        return True
+    
     report_data = {
         "video_name": "N/A",
         "download_status": "Failed / Unknown",
