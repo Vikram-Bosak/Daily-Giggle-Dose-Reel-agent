@@ -66,7 +66,7 @@ def run_upload(video_data):
         
     video_data["description"] = fb_caption
 
-    delay_seconds = random.randint(5, 10) # 5 to 10 seconds for testing
+    delay_seconds = random.randint(60, 300) # 1 to 5 minutes for safety
     delay_minutes = delay_seconds / 60
     logging.info(f"Waiting for {delay_seconds} seconds ({delay_minutes:.1f} minutes) before uploading to appear human...")
     
