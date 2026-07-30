@@ -49,15 +49,13 @@ def run_single_sequence():
         write_report(report_data)
         return False
 
-    # 1. Download
-    report_download_start()
     video_data, stats = run_downloader()
     if not video_data:
         print("No video found.")
         report_data["download_status"] = "No new video found"
         write_report(report_data)
         return False
-            
+             
     # Ensure stats always has required keys for downstream code
     stats.setdefault("errors", [])
     stats.setdefault("videos_edited", 0)
@@ -66,6 +64,9 @@ def run_single_sequence():
     task_id = video_data['id']
     title = video_data.get('title', '')
     source_url = video_data.get('source_url', '')
+    
+    # Report download start with url
+    report_download_start(source_url)
     
     report_data["video_name"] = title if title else task_id
     report_data["download_status"] = "Success"

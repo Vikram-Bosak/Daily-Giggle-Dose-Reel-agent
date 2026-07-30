@@ -53,10 +53,10 @@ def get_run_details() -> str:
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     return f"**Run ID:** {run_id} | **Workflow:** {workflow} | **Time:** {current_time}"
 
-def report_download_start():
+def report_download_start(source_url: str):
     embed = {
         "title": "🟢 Funny Video Download Started",
-        "description": get_run_details(),
+        "description": f"**Source:** {source_url}\n{get_run_details()}",
         "color": 3066993 # Greenish
     }
     send_discord_message("", embeds=[embed])
