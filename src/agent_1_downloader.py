@@ -206,54 +206,54 @@ def search_and_download_latest_video():
                 stats["errors"].append(f"RSS Fetch Error for {username}")
                 continue
             
-        for item in items:
-            title = item.find('title').text if item.find('title') is not None else ""
-            link = item.find('link').text if item.find('link') is not None else ""
-            pubDate_str = item.find('pubDate').text if item.find('pubDate') is not None else ""
-            desc = item.find('description').text if item.find('description') is not None else ""
-            
-            if not link or not pubDate_str:
-                continue
+            for item in items:
+                title = item.find('title').text if item.find('title') is not None else ""
+                link = item.find('link').text if item.find('link') is not None else ""
+                pubDate_str = item.find('pubDate').text if item.find('pubDate') is not None else ""
+                desc = item.find('description').text if item.find('description') is not None else ""
                 
-            # 1. Check if it's a video
-            if ">Video<" not in desc and "Video" not in desc:
-                continue
+                if not link or not pubDate_str:
+                    continue
+                    
+                # 1. Check if it's a video
+                if ">Video<" not in desc and "Video" not in desc:
+                    continue
+                    
+                # 2. Extract tweet ID and check history
+                try:
+                    # Link is usually https://nitter.net/username/status/123456789#m
+                    tweet_id = link.split("/status/")[1].split("#")[0].split("?")[0]
+                except Exception:
+                    continue
+                    
+                # 3. Check exact post time
+                try:
+                    post_time = parsedate_to_datetime(pubDate_str)
+                    if post_time.tzinfo is None:
+                        post_time = post_time.replace(tzinfo=timezone.utc)
+                except Exception as e:
+                    print(f"Error parsing date {pubDate_str}: {e}")
+                    continue
+                    
+                if post_time < time_limit:
+                    # Since RSS is chronological, if we hit an old one, we can stop checking this profile.
+                    print(f"Post {tweet_id} is older than 3 hours. Moving to next profile.")
+                    break
+                    
+                # It is a recent video
+                stats["new_videos_found"] += 1
                 
-            # 2. Extract tweet ID and check history
-            try:
-                # Link is usually https://nitter.net/username/status/123456789#m
-                tweet_id = link.split("/status/")[1].split("#")[0].split("?")[0]
-            except Exception:
-                continue
-                
-            # 3. Check exact post time
-            try:
-                post_time = parsedate_to_datetime(pubDate_str)
-                if post_time.tzinfo is None:
-                    post_time = post_time.replace(tzinfo=timezone.utc)
-            except Exception as e:
-                print(f"Error parsing date {pubDate_str}: {e}")
-                continue
-                
-            if post_time < time_limit:
-                # Since RSS is chronological, if we hit an old one, we can stop checking this profile.
-                print(f"Post {tweet_id} is older than 3 hours. Moving to next profile.")
-                break
-                
-            # It is a recent video
-            stats["new_videos_found"] += 1
-            
-            if tweet_id in history:
-                print(f"Video {tweet_id} already in history, skipping...")
-                stats["videos_skipped"] += 1
-                continue
-                
-            original_tweet_url = f"https://x.com/{username}/status/{tweet_id}"
-            valid_videos.append({
-                "tweet_id": tweet_id,
-                "url": original_tweet_url,
-                "post_time": post_time
-            })
+                if tweet_id in history:
+                    print(f"Video {tweet_id} already in history, skipping...")
+                    stats["videos_skipped"] += 1
+                    continue
+                    
+                original_tweet_url = f"https://x.com/{username}/status/{tweet_id}"
+                valid_videos.append({
+                    "tweet_id": tweet_id,
+                    "url": original_tweet_url,
+                    "post_time": post_time
+                })
             
     print("--------------------------------------------------")
     if not valid_videos:
