@@ -1,6 +1,7 @@
 import os
 import json
 import urllib.request
+import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
@@ -92,7 +93,6 @@ def search_and_download_latest_video():
     valid_videos = []
     
     if search_query:
-        import urllib.parse
         encoded_query = urllib.parse.quote(search_query)
         stats["profiles_scanned"] += 1
         print(f"--------------------------------------------------")
