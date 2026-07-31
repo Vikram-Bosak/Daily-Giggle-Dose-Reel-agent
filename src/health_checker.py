@@ -52,7 +52,6 @@ def check_facebook_token(access_token, page_id):
                         if remaining <= 0:
                             return False, "Facebook access token has expired. Generate a fresh token."
                         elif remaining < 3600:
-                            from logger import logger
                             logger.warning(f"Facebook access token expires in {remaining} seconds (~{remaining//60} min). Consider refreshing soon.")
             except Exception:
                 pass  # debug_token is best-effort
@@ -130,11 +129,47 @@ def check_google_drive():
         if not root_folder_id:
             return False, "GOOGLE_DRIVE_FOLDER_ID is missing from configuration."
             
-        # Try to retrieve metadata for the root folder to verify connection/access
-        folder = service.files().get(fileId=root_folder_id, fields="id, name").execute()
+        # Try to retrieve metadata for the root folder with a socket timeout to prevent hanging
+        import socket
+        orig_timeout = socket.getdefaulttimeout()
+        try:
+            socket.setdefaulttimeout(10)
+            folder = service.files().get(fileId=root_folder_id, fields="id, name").execute()
+        finally:
+            socket.setdefaulttimeout(orig_timeout)
+            
         return True, f"Google Drive API connection successful. Connected to folder: {folder.get('name')}"
     except Exception as e:
         return False, f"Google Drive connection check failed: {e}"
+
+def check_youtube():
+    """
+    Checks if YouTube API credentials are valid and accessible.
+    """
+    try:
+        try:
+            from .youtube_uploader import get_youtube_client
+        except ImportError:
+            from youtube_uploader import get_youtube_client
+            
+        youtube = get_youtube_client()
+        
+        # Verify connection by listing channel details (mine=True) with a socket timeout
+        import socket
+        orig_timeout = socket.getdefaulttimeout()
+        try:
+            socket.setdefaulttimeout(10)
+            request = youtube.channels().list(part="id", mine=True)
+            response = request.execute()
+        finally:
+            socket.setdefaulttimeout(orig_timeout)
+            
+        channels = response.get('items', [])
+        if channels:
+            return True, f"YouTube API connection successful. Channel ID: {channels[0]['id']}"
+        return False, "YouTube API response did not return any channels."
+    except Exception as e:
+        return False, f"YouTube API health check failed: {e}"
 
 def run_all_health_checks(access_token, page_id):
     """
@@ -165,6 +200,15 @@ def run_all_health_checks(access_token, page_id):
     # Run Facebook check
     ok, msg = check_facebook_token(access_token, page_id)
     results["Facebook"] = {"ok": ok, "message": msg}
+    if not ok:
+        is_healthy = False
+        logger.error(f"Health Check Failed: {msg}")
+    else:
+        logger.info(f"Health Check Passed: {msg}")
+        
+    # Run YouTube check
+    ok, msg = check_youtube()
+    results["YouTube"] = {"ok": ok, "message": msg}
     if not ok:
         is_healthy = False
         logger.error(f"Health Check Failed: {msg}")

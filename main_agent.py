@@ -35,7 +35,6 @@ def run_single_sequence():
     # 25% chance to skip this scheduled run to prevent machine-like periodic posting
     if random.random() < 0.25:
         print("Organic human behavior simulation: Skipping this scheduled run to create natural posting gaps.")
-        from src.common.discord import send_discord_message
         send_discord_message("💤 **Organic Post Break:** Skipping this scheduled run to simulate natural human posting gaps and prevent Facebook Inauthentic Behavior flags.")
         return True
     
@@ -109,10 +108,10 @@ def run_single_sequence():
     print("Pushing history to GitHub immediately to prevent race conditions...")
     try:
         import subprocess
-        subprocess.run("git config --global user.name 'github-actions[bot]'", shell=True)
-        subprocess.run("git config --global user.email 'github-actions[bot]@users.noreply.github.com'", shell=True)
-        subprocess.run("git add downloaded_history.txt", shell=True, check=True)
-        subprocess.run("git commit -m 'Update history (mid-run)'", shell=True, check=True)
+        subprocess.run('git config --global user.name "github-actions[bot]"', shell=True)
+        subprocess.run('git config --global user.email "github-actions[bot]@users.noreply.github.com"', shell=True)
+        subprocess.run('git add downloaded_history.txt', shell=True, check=True)
+        subprocess.run('git commit -m "Update history (mid-run)"', shell=True, check=True)
         subprocess.run("git pull origin main --rebase --strategy-option=ours", shell=True, check=True)
         subprocess.run("git push origin HEAD:main", shell=True, check=True)
         print("History pushed successfully.")

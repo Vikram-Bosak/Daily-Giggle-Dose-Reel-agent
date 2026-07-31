@@ -66,7 +66,8 @@ def run_upload(video_data):
         
     video_data["description"] = fb_caption
 
-    delay_seconds = random.randint(600, 1500) # 10 to 25 minutes for safety (Inauthentic Behavior protection)
+    bypass_delay = os.environ.get("BYPASS_UPLOAD_DELAY", "false").lower() == "true"
+    delay_seconds = 1 if bypass_delay else random.randint(600, 1500) # 10 to 25 minutes for safety (Inauthentic Behavior protection)
     delay_minutes = delay_seconds / 60
     logging.info(f"Waiting for {delay_seconds} seconds ({delay_minutes:.1f} minutes) before uploading to appear human...")
     

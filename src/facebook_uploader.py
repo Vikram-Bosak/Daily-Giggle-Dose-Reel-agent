@@ -7,6 +7,32 @@ try:
 except ImportError:
     from logger import logger
 
+FB_API_VERSION = os.environ.get('FB_API_VERSION', 'v19.0')
+
+def make_request_with_retry(method, url, max_retries=3, backoff_factor=2, **kwargs):
+    """
+    Makes an HTTP request with timeout and exponential backoff retry logic.
+    Retries on 5xx errors and rate limit (429) status codes.
+    """
+    kwargs.setdefault('timeout', 30)
+    for attempt in range(1, max_retries + 1):
+        try:
+            response = requests.request(method, url, **kwargs)
+            if response.status_code == 429 or response.status_code >= 500:
+                if attempt == max_retries:
+                    return response
+                sleep_time = backoff_factor ** attempt
+                logger.warning(f"Request failed with status {response.status_code}. Retrying in {sleep_time} seconds (attempt {attempt}/{max_retries})...")
+                time.sleep(sleep_time)
+                continue
+            return response
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
+            if attempt == max_retries:
+                raise
+            sleep_time = backoff_factor ** attempt
+            logger.warning(f"Request failed: {e}. Retrying in {sleep_time} seconds (attempt {attempt}/{max_retries})...")
+            time.sleep(sleep_time)
+
 def get_fb_credentials():
     access_token = os.environ.get('FB_ACCESS_TOKEN')
     page_id = os.environ.get('FB_PAGE_ID')
@@ -17,9 +43,9 @@ def get_page_access_token(user_token, page_id):
     Queries /me/accounts to find the Page Access Token for the target Page ID.
     If not found or query fails, returns the user_token back as a fallback.
     """
-    url = f"https://graph.facebook.com/v19.0/me/accounts?limit=100&access_token={user_token}"
+    url = f"https://graph.facebook.com/{FB_API_VERSION}/me/accounts?limit=100&access_token={user_token}"
     try:
-        response = requests.get(url)
+        response = make_request_with_retry('GET', url)
         if response.status_code == 200:
             data = response.json().get('data', [])
             for page in data:
@@ -56,7 +82,6 @@ def _parse_fb_error(response):
         )
     except Exception:
         return None, None, None
-
 
 def _handle_api_error(response, step_name):
     """
@@ -115,14 +140,14 @@ def upload_reel(video_path, caption, title=None):
     
     # Step 1: Initialize Upload
     logger.info("Step 1: Initializing Reel upload session...")
-    init_url = f"https://graph.facebook.com/v19.0/{page_id}/video_reels"
+    init_url = f"https://graph.facebook.com/{FB_API_VERSION}/{page_id}/video_reels"
     init_payload = {
         'access_token': access_token,
         'upload_phase': 'start',
         'file_size': file_size
     }
     
-    init_response = requests.post(init_url, data=init_payload)
+    init_response = make_request_with_retry('POST', init_url, data=init_payload)
     _handle_api_error(init_response, "Initialize Upload")
     init_data = init_response.json()
     
@@ -143,12 +168,12 @@ def upload_reel(video_path, caption, title=None):
     with open(video_path, 'rb') as f:
         video_data = f.read()
         
-    upload_response = requests.post(upload_url, headers=headers, data=video_data)
+    upload_response = make_request_with_retry('POST', upload_url, headers=headers, data=video_data)
     _handle_api_error(upload_response, "Upload Video Data")
     
     # Step 3: Publish Video
     logger.info("Step 3: Publishing Reel on Facebook Page...")
-    publish_url = f"https://graph.facebook.com/v19.0/{page_id}/video_reels"
+    publish_url = f"https://graph.facebook.com/{FB_API_VERSION}/{page_id}/video_reels"
     publish_payload = {
         'access_token': access_token,
         'upload_phase': 'finish',
@@ -157,7 +182,7 @@ def upload_reel(video_path, caption, title=None):
         'description': caption
     }
     
-    publish_response = requests.post(publish_url, data=publish_payload)
+    publish_response = make_request_with_retry('POST', publish_url, data=publish_payload)
     _handle_api_error(publish_response, "Publish Video")
     publish_data = publish_response.json()
     
@@ -183,7 +208,7 @@ def upload_photo(photo_path, caption):
     # Resolve Page Access Token
     access_token = get_page_access_token(user_token, page_id)
 
-    upload_url = f"https://graph.facebook.com/v19.0/{page_id}/photos"
+    upload_url = f"https://graph.facebook.com/{FB_API_VERSION}/{page_id}/photos"
     payload = {
         'access_token': access_token,
         'message': caption
@@ -194,7 +219,7 @@ def upload_photo(photo_path, caption):
             'source': f
         }
         logger.info("Uploading photo to Facebook Page...")
-        response = requests.post(upload_url, data=payload, files=files)
+        response = make_request_with_retry('POST', upload_url, data=payload, files=files)
         
     _handle_api_error(response, "Upload Photo")
     data = response.json()
